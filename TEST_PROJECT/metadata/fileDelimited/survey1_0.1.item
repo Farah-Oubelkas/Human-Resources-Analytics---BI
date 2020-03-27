@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_SoGvMGehEeqGGfrNPR2xZw" name="survey1" dataPackage="_SoGvMWehEeqGGfrNPR2xZw" Server="Localhost 127.0.0.1" FilePath="C:/Users/Farah/Desktop/Ensa/S8/project-BI/survey_data.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_SoGvMWehEeqGGfrNPR2xZw" name="default" dataManager="_SoGvMGehEeqGGfrNPR2xZw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_SoGvMmehEeqGGfrNPR2xZw" id="_NWRpMGehEeqGGfrNPR2xZw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SoGvM2ehEeqGGfrNPR2xZw" label="employee_id" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SoGvNGehEeqGGfrNPR2xZw" label="department" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SoGvNWehEeqGGfrNPR2xZw" label="engagement" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SoGvNmehEeqGGfrNPR2xZw" label="salary" length="11" precision="6" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SoGvN2ehEeqGGfrNPR2xZw" label="vacation_days_taken" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

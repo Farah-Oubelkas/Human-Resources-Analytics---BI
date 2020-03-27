@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendNoSQLMetadata="http://www.talend.org/nosql" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendNoSQLMetadata:NoSQLConnection xmi:id="_72QmcG-gEeq6mrOt8nmR6g" name="datawarehouse" label="datawarehouse" dataPackage="_9pYJ4G-gEeq6mrOt8nmR6g" dbType="MONGODB">
+    <attributes xmi:id="_72QmcW-gEeq6mrOt8nmR6g" key="DB_VERSION" value="MONGODB_3_5_X"/>
+    <attributes xmi:id="_72Qmcm-gEeq6mrOt8nmR6g" key="HOST" value="localhost"/>
+    <attributes xmi:id="_72Qmc2-gEeq6mrOt8nmR6g" key="PORT" value="27017"/>
+    <attributes xmi:id="_72QmdG-gEeq6mrOt8nmR6g" key="DATABASE" value="Datawarehouse"/>
+    <attributes xmi:id="_72QmdW-gEeq6mrOt8nmR6g" key="REQUIRED_AUTHENTICATION" value="false"/>
+    <attributes xmi:id="_72Qmdm-gEeq6mrOt8nmR6g" key="USERNAME" value=""/>
+    <attributes xmi:id="_72Qmd2-gEeq6mrOt8nmR6g" key="PASSWORD" value=""/>
+    <attributes xmi:id="_72QmeG-gEeq6mrOt8nmR6g" key="USE_REPLICA_SET" value="false"/>
+    <attributes xmi:id="_72QmeW-gEeq6mrOt8nmR6g" key="REPLICA_SET" value="[]"/>
+  </TalendNoSQLMetadata:NoSQLConnection>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_9pYJ4G-gEeq6mrOt8nmR6g" name="Datawarehouse" dataManager="_72QmcG-gEeq6mrOt8nmR6g">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_9pYJ4W-gEeq6mrOt8nmR6g" name="dim_recruitment" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_83k5gG-gEeq6mrOt8nmR6g" label="dim_recruitment"/>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_9pYJ4m-gEeq6mrOt8nmR6g" name="dim_temps" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_86zMoG-gEeq6mrOt8nmR6g" label="dim_temps"/>
+  </orgomg.cwm.resource.relational:Schema>
+</xmi:XMI>
