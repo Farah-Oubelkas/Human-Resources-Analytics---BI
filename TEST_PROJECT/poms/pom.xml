@@ -12,11 +12,14 @@
     <module>code/routines</module>
     <module>jobs/process/datafiles_to_mongodb_0.1</module>
     <module>jobs/process/performance_dim_0.1</module>
-    <module>jobs/process/recruitment_0.1</module>
     <module>jobs/process/dim_temps_0.1</module>
     <module>jobs/process/test_0.1</module>
     <module>jobs/process/dim_performance_0.1</module>
     <module>jobs/process/dim_accident_0.1</module>
+    <module>jobs/process/fact_table_0.1</module>
+    <module>jobs/process/dim_engagement_0.1</module>
+    <module>jobs/process/dim_pay_0.1</module>
+    <module>jobs/process/dim_recruitment_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TEST_PROJECT</talend.project.name>
