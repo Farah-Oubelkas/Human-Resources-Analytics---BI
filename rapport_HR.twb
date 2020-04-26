@@ -1,755 +1,895 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20193.19.0821.2225                               -->
-<workbook original-version='18.1' source-build='2019.3.0 (20193.19.0821.2225)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook original-version='18.1' source-build='2019.3.0 (20193.19.0821.2225)' source-platform='win' version='18.1' xml:base='https://eu-west-1a.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
+    <ISO8601DefaultCalendarPref ignorable='true' predowngraded='true' />
     <IntuitiveSorting />
     <IntuitiveSorting_SP2 />
     <SheetIdentifierTracking ignorable='true' predowngraded='true' />
     <WindowsPersistSimpleIdentifiers />
   </document-format-change-manifest>
+  <repository-location id='rapport_hr' path='/t/farahensab/workbooks' revision='1.2' site='farahensab' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
-    <datasource caption='mongo_bi' inline='true' name='federated.10mvfo20tzm16f109qeqc17cjitd' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='mongo_bi (ODBC)' name='genericodbc.0pcbbbo1s80cpg1cm26m40ise5ux'>
-            <connection class='genericodbc' dbname='' odbc-connect-string-extras='Host=localhost;SD=C:\Users\Default\AppData\Local\Progress\DataDirect\MongoDB_Schema\localhost;DB=Datawarehouse' odbc-dbms-name='MongoDB' odbc-driver='DataDirect 8.0 MongoDB' odbc-dsn='mongo_bi' odbc-suppress-connection-pooling='' odbc-use-connection-pooling='' port='27017' server='' username='USER'>
-              <connection-customization class='genericodbc' enabled='false' version='18.1'>
-                <vendor name='MongoDB' />
-                <driver name='DataDirect 8.0 MongoDB' />
-                <customizations>
-                  <customization name='CAP_CREATE_TEMP_TABLES' value='no' />
-                  <customization name='CAP_ISOLATION_LEVEL_READ_COMMITTED' value='no' />
-                  <customization name='CAP_ISOLATION_LEVEL_READ_UNCOMMITTED' value='no' />
-                  <customization name='CAP_ISOLATION_LEVEL_REPEATABLE_READS' value='no' />
-                  <customization name='CAP_ISOLATION_LEVEL_SERIALIZABLE' value='no' />
-                  <customization name='CAP_ODBC_BIND_DETECT_ALIAS_CASE_FOLDING' value='no' />
-                  <customization name='CAP_ODBC_BIND_FORCE_DATETIME_AS_CHAR' value='no' />
-                  <customization name='CAP_ODBC_BIND_FORCE_DATE_AS_CHAR' value='no' />
-                  <customization name='CAP_ODBC_BIND_FORCE_MAX_STRING_BUFFERS' value='no' />
-                  <customization name='CAP_ODBC_BIND_FORCE_MEDIUM_STRING_BUFFERS' value='no' />
-                  <customization name='CAP_ODBC_BIND_FORCE_SIGNED' value='no' />
-                  <customization name='CAP_ODBC_BIND_FORCE_SMALL_STRING_BUFFERS' value='no' />
-                  <customization name='CAP_ODBC_BIND_SUPPRESS_INT64' value='no' />
-                  <customization name='CAP_ODBC_BIND_SUPPRESS_PREFERRED_TYPES' value='no' />
-                  <customization name='CAP_ODBC_BIND_SUPPRESS_WIDE_CHAR' value='no' />
-                  <customization name='CAP_ODBC_CURSOR_DYNAMIC' value='no' />
-                  <customization name='CAP_ODBC_CURSOR_FORWARD_ONLY' value='no' />
-                  <customization name='CAP_ODBC_CURSOR_KEYSET_DRIVEN' value='no' />
-                  <customization name='CAP_ODBC_CURSOR_STATIC' value='no' />
-                  <customization name='CAP_ODBC_ERROR_IGNORE_FALSE_ALARM' value='no' />
-                  <customization name='CAP_ODBC_FETCH_BUFFERS_RESIZABLE' value='no' />
-                  <customization name='CAP_ODBC_FETCH_BUFFERS_SIZE_MASSIVE' value='no' />
-                  <customization name='CAP_ODBC_FETCH_CONTINUE_ON_ERROR' value='no' />
-                  <customization name='CAP_ODBC_METADATA_STRING_LENGTH_UNKNOWN' value='no' />
-                  <customization name='CAP_ODBC_METADATA_SUPPRESS_EXECUTED_QUERY' value='no' />
-                  <customization name='CAP_ODBC_METADATA_SUPPRESS_PREPARED_QUERY' value='no' />
-                  <customization name='CAP_ODBC_METADATA_SUPPRESS_SELECT_STAR' value='no' />
-                  <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLCOLUMNS_API' value='no' />
-                  <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLFOREIGNKEYS_API' value='no' />
-                  <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLPRIMARYKEYS_API' value='no' />
-                  <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLSTATISTICS_API' value='no' />
-                  <customization name='CAP_ODBC_REBIND_SKIP_UNBIND' value='no' />
-                  <customization name='CAP_ODBC_TRIM_VARCHAR_PADDING' value='no' />
-                  <customization name='CAP_ODBC_UNBIND_AUTO' value='no' />
-                  <customization name='CAP_ODBC_UNBIND_BATCH' value='no' />
-                  <customization name='CAP_ODBC_UNBIND_EACH' value='no' />
-                  <customization name='CAP_QUERY_BOOLEXPR_TO_INTEXPR' value='yes' />
-                  <customization name='CAP_QUERY_FROM_REQUIRES_ALIAS' value='no' />
-                  <customization name='CAP_QUERY_GROUP_ALLOW_DUPLICATES' value='yes' />
-                  <customization name='CAP_QUERY_GROUP_BY_ALIAS' value='yes' />
-                  <customization name='CAP_QUERY_GROUP_BY_DEGREE' value='no' />
-                  <customization name='CAP_QUERY_HAVING_REQUIRES_GROUP_BY' value='no' />
-                  <customization name='CAP_QUERY_HAVING_UNSUPPORTED' value='no' />
-                  <customization name='CAP_QUERY_JOIN_ACROSS_SCHEMAS' value='no' />
-                  <customization name='CAP_QUERY_JOIN_REQUIRES_SCOPE' value='no' />
-                  <customization name='CAP_QUERY_NULL_REQUIRES_CAST' value='no' />
-                  <customization name='CAP_QUERY_SELECT_ALIASES_SORTED' value='yes' />
-                  <customization name='CAP_QUERY_SORT_BY_DEGREE' value='yes' />
-                  <customization name='CAP_QUERY_SUBQUERIES' value='yes' />
-                  <customization name='CAP_QUERY_SUBQUERIES_WITH_TOP' value='yes' />
-                  <customization name='CAP_QUERY_SUBQUERY_QUERY_CONTEXT' value='yes' />
-                  <customization name='CAP_QUERY_TOPSTYLE_LIMIT' value='no' />
-                  <customization name='CAP_QUERY_TOPSTYLE_ROWNUM' value='no' />
-                  <customization name='CAP_QUERY_TOPSTYLE_TOP' value='yes' />
-                  <customization name='CAP_QUERY_TOP_0_METADATA' value='no' />
-                  <customization name='CAP_QUERY_TOP_N' value='yes' />
-                  <customization name='CAP_QUERY_WHERE_FALSE_METADATA' value='no' />
-                  <customization name='CAP_SELECT_INTO' value='no' />
-                  <customization name='CAP_SELECT_TOP_INTO' value='yes' />
-                  <customization name='CAP_SET_ISOLATION_LEVEL_VIA_ODBC_API' value='no' />
-                  <customization name='CAP_SET_ISOLATION_LEVEL_VIA_SQL' value='no' />
-                  <customization name='CAP_SUPPRESS_CONNECTION_POOLING' value='no' />
-                  <customization name='CAP_SUPPRESS_DISCOVERY_QUERIES' value='no' />
-                  <customization name='SQL_AGGREGATE_FUNCTIONS' value='64' />
-                  <customization name='SQL_CATALOG_NAME_SEPARATOR' value='' />
-                  <customization name='SQL_CATALOG_USAGE' value='0' />
-                  <customization name='SQL_COLUMN_ALIAS' value='Y' />
-                  <customization name='SQL_CONVERT_BIGINT' value='10514815' />
-                  <customization name='SQL_CONVERT_BINARY' value='10775839' />
-                  <customization name='SQL_CONVERT_BIT' value='10514815' />
-                  <customization name='SQL_CONVERT_CHAR' value='31883135' />
-                  <customization name='SQL_CONVERT_DATE' value='0' />
-                  <customization name='SQL_CONVERT_DECIMAL' value='10514815' />
-                  <customization name='SQL_CONVERT_DOUBLE' value='0' />
-                  <customization name='SQL_CONVERT_FLOAT' value='10514815' />
-                  <customization name='SQL_CONVERT_FUNCTIONS' value='3' />
-                  <customization name='SQL_CONVERT_INTEGER' value='10514815' />
-                  <customization name='SQL_CONVERT_INTERVAL_DAY_TIME' value='0' />
-                  <customization name='SQL_CONVERT_LONGVARBINARY' value='265216' />
-                  <customization name='SQL_CONVERT_NUMERIC' value='10514815' />
-                  <customization name='SQL_CONVERT_REAL' value='10514815' />
-                  <customization name='SQL_CONVERT_SMALLINT' value='10514815' />
-                  <customization name='SQL_CONVERT_TIME' value='0' />
-                  <customization name='SQL_CONVERT_TIMESTAMP' value='10617089' />
-                  <customization name='SQL_CONVERT_TINYINT' value='10514815' />
-                  <customization name='SQL_CONVERT_VARBINARY' value='10775839' />
-                  <customization name='SQL_CONVERT_VARCHAR' value='31883135' />
-                  <customization name='SQL_DATETIME_LITERALS' value='0' />
-                  <customization name='SQL_DBMS_NAME' value='MongoDB' />
-                  <customization name='SQL_DBMS_VER' value='4.2.3' />
-                  <customization name='SQL_DRIVER_ODBC_VER' value='03.52' />
-                  <customization name='SQL_DRIVER_VER' value='08.01.0264 (B0580, U0410, J000488)' />
-                  <customization name='SQL_IDENTIFIER_QUOTE_CHAR' value='&quot;' />
-                  <customization name='SQL_MAX_IDENTIFIER_LEN' value='128' />
-                  <customization name='SQL_NUMERIC_FUNCTIONS' value='16777215' />
-                  <customization name='SQL_ODBC_INTERFACE_CONFORMANCE' value='2' />
-                  <customization name='SQL_ODBC_VER' value='03.80.0000' />
-                  <customization name='SQL_OJ_CAPABILITIES' value='127' />
-                  <customization name='SQL_QUOTED_IDENTIFIER_CASE' value='3' />
-                  <customization name='SQL_SCHEMA_USAGE' value='31' />
-                  <customization name='SQL_SPECIAL_CHARACTERS' value='#$' />
-                  <customization name='SQL_SQL92_DATETIME_FUNCTIONS' value='0' />
-                  <customization name='SQL_SQL92_NUMERIC_VALUE_FUNCTIONS' value='0' />
-                  <customization name='SQL_SQL92_PREDICATES' value='7' />
-                  <customization name='SQL_SQL92_RELATIONAL_JOIN_OPERATORS' value='858' />
-                  <customization name='SQL_SQL92_STRING_FUNCTIONS' value='6' />
-                  <customization name='SQL_SQL92_VALUE_EXPRESSIONS' value='15' />
-                  <customization name='SQL_SQL_CONFORMANCE' value='1' />
-                  <customization name='SQL_STRING_FUNCTIONS' value='8388607' />
-                  <customization name='SQL_SYSTEM_FUNCTIONS' value='7' />
-                  <customization name='SQL_TIMEDATE_ADD_INTERVALS' value='511' />
-                  <customization name='SQL_TIMEDATE_DIFF_INTERVALS' value='511' />
-                  <customization name='SQL_TIMEDATE_FUNCTIONS' value='1179647' />
-                  <customization name='SQL_TXN_CAPABLE' value='0' />
-                </customizations>
-              </connection-customization>
-            </connection>
-          </named-connection>
-        </named-connections>
-        <relation join='right' type='join'>
-          <clause type='join'>
-            <expression op='='>
-              <expression op='[FACT_TABLE].[EMPLOYEE_ID]' />
-              <expression op='[DIM_HR].[EMPLOYEE_ID]' />
-            </expression>
-          </clause>
-          <relation join='inner' type='join'>
-            <clause type='join'>
-              <expression op='='>
-                <expression op='[FACT_TABLE].[YEAR]' />
-                <expression op='[DIM_TEMPS].[YEAR]' />
-              </expression>
-            </clause>
-            <relation join='inner' type='join'>
-              <clause type='join'>
-                <expression op='='>
-                  <expression op='[FACT_TABLE].[RECRUITMENT_ID]' />
-                  <expression op='[DIM_RECRUITMENT].[RECRUITMENT_ID]' />
-                </expression>
-              </clause>
-              <relation connection='genericodbc.0pcbbbo1s80cpg1cm26m40ise5ux' name='FACT_TABLE' table='[DATAWAREHOUSE].[FACT_TABLE]' type='table' />
-              <relation connection='genericodbc.0pcbbbo1s80cpg1cm26m40ise5ux' name='DIM_RECRUITMENT' table='[DATAWAREHOUSE].[DIM_RECRUITMENT]' type='table' />
-            </relation>
-            <relation connection='genericodbc.0pcbbbo1s80cpg1cm26m40ise5ux' name='DIM_TEMPS' table='[DATAWAREHOUSE].[DIM_TEMPS]' type='table' />
-          </relation>
-          <relation connection='genericodbc.0pcbbbo1s80cpg1cm26m40ise5ux' name='DIM_HR' table='[DATAWAREHOUSE].[DIM_HR]' type='table' />
-        </relation>
-        <cols>
-          <map key='[ACCIDENT_TYPE]' value='[DIM_HR].[ACCIDENT_TYPE]' />
-          <map key='[ATTRITION]' value='[DIM_RECRUITMENT].[ATTRITION]' />
-          <map key='[DEPARTMENT]' value='[DIM_HR].[DEPARTMENT]' />
-          <map key='[EMPLOYEE_ID (DIM_HR)]' value='[DIM_HR].[EMPLOYEE_ID]' />
-          <map key='[EMPLOYEE_ID]' value='[FACT_TABLE].[EMPLOYEE_ID]' />
-          <map key='[ENGAGEMENT]' value='[DIM_HR].[ENGAGEMENT]' />
-          <map key='[GENDER]' value='[DIM_HR].[GENDER]' />
-          <map key='[JOB_LEVEL]' value='[DIM_HR].[JOB_LEVEL]' />
-          <map key='[LOCATION]' value='[DIM_HR].[LOCATION]' />
-          <map key='[NEW_HIRE]' value='[DIM_HR].[NEW_HIRE]' />
-          <map key='[OVERTIME_HOURS]' value='[DIM_HR].[OVERTIME_HOURS]' />
-          <map key='[PERFORMANCE_RATING]' value='[DIM_RECRUITMENT].[PERFORMANCE_RATING]' />
-          <map key='[RATING]' value='[DIM_HR].[RATING]' />
-          <map key='[RECRUITING_SOURCE]' value='[DIM_RECRUITMENT].[RECRUITING_SOURCE]' />
-          <map key='[RECRUITMENT_ID (DIM_RECRUITMENT)]' value='[DIM_RECRUITMENT].[RECRUITMENT_ID]' />
-          <map key='[RECRUITMENT_ID]' value='[FACT_TABLE].[RECRUITMENT_ID]' />
-          <map key='[SALARY]' value='[DIM_HR].[SALARY]' />
-          <map key='[SALES_QUOTA_PCT]' value='[DIM_RECRUITMENT].[SALES_QUOTA_PCT]' />
-          <map key='[VACATION_DAYS_TAKEN]' value='[DIM_HR].[VACATION_DAYS_TAKEN]' />
-          <map key='[YEAR (DIM_HR)]' value='[DIM_HR].[YEAR]' />
-          <map key='[YEAR (DIM_TEMPS)]' value='[DIM_TEMPS].[YEAR]' />
-          <map key='[YEAR]' value='[FACT_TABLE].[YEAR]' />
-          <map key='[_ID (DIM_HR)]' value='[DIM_HR].[_ID]' />
-          <map key='[_ID (DIM_RECRUITMENT)]' value='[DIM_RECRUITMENT].[_ID]' />
-          <map key='[_ID (DIM_TEMPS)]' value='[DIM_TEMPS].[_ID]' />
-          <map key='[_ID]' value='[FACT_TABLE].[_ID]' />
-        </cols>
+    <datasource caption='mongo_bi' inline='true' name='sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0' version='18.1'>
+      <repository-location id='mongo_bi' path='/t/farahensab/datasources' revision='1.0' site='farahensab' />
+      <connection channel='https' class='sqlproxy' dbname='mongo_bi' directory='/dataserver' port='443' server='eu-west-1a.online.tableau.com' username='USER' workgroup-auth-mode='prompt'>
+        <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+        <calculations>
+          <calculation column='[Calculation_668221638956298240]' formula='SUM([Calculation_951666940030615563])' />
+          <calculation column='[Calculation_951666940019032065]' formula='AVG([ATTRITION])' />
+          <calculation column='[Calculation_951666940020559875]' formula='AVG([SALES_QUOTA_PCT])' />
+          <calculation column='[Calculation_951666940020858884]' formula='INT(Avg([ENGAGEMENT]))' />
+          <calculation column='[Calculation_951666940021194757]' formula='AVG([SALARY])' />
+          <calculation column='[Calculation_951666940022501383]' formula='COUNT([RECRUITING_SOURCE])' />
+          <calculation column='[Calculation_951666940027842568]' formula='IF [ENGAGEMENT] = 1 OR [ENGAGEMENT]= 2&#13;&#10;THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+          <calculation column='[Calculation_951666940029685769]' formula='If [RATING]&gt;= 4 &#13;&#10;THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+          <calculation column='[Calculation_951666940030615563]' formula='IF ISNULL([LOCATION])&#13;&#10;THEN 0&#13;&#10;ELSE&#13;&#10;1&#13;&#10;END' />
+          <calculation column='[Calculation_951666940073517069]' formula='INT(AVG([VACATION_DAYS_TAKEN]))' />
+          <calculation column='[Calculation_951666940073652238]' formula='AVG([Calculation_951666940027842568])' />
+          <calculation column='[Number of Records]' formula='1' />
+        </calculations>
         <metadata-records>
           <metadata-record class='column'>
-            <remote-name>RECRUITMENT_ID</remote-name>
-            <remote-type>3</remote-type>
-            <local-name>[RECRUITMENT_ID]</local-name>
-            <parent-name>[FACT_TABLE]</parent-name>
-            <remote-alias>RECRUITMENT_ID</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>10</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>YEAR</remote-name>
-            <remote-type>3</remote-type>
-            <local-name>[YEAR]</local-name>
-            <parent-name>[FACT_TABLE]</parent-name>
-            <remote-alias>YEAR</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>10</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>EMPLOYEE_ID</remote-name>
-            <remote-type>3</remote-type>
-            <local-name>[EMPLOYEE_ID]</local-name>
-            <parent-name>[FACT_TABLE]</parent-name>
-            <remote-alias>EMPLOYEE_ID</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>10</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>_ID</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[_ID]</local-name>
-            <parent-name>[FACT_TABLE]</parent-name>
-            <remote-alias>_ID</remote-alias>
-            <ordinal>4</ordinal>
+            <remote-name>ACCIDENT_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ACCIDENT_TYPE]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>ACCIDENT_TYPE</remote-alias>
+            <ordinal>22</ordinal>
+            <layered>true</layered>
+            <caption>Accident Type</caption>
+            <family>DIM_HR</family>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <width>24</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='binary' />
             <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
             </attributes>
           </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>RECRUITMENT_ID</remote-name>
-            <remote-type>3</remote-type>
-            <local-name>[RECRUITMENT_ID (DIM_RECRUITMENT)]</local-name>
-            <parent-name>[DIM_RECRUITMENT]</parent-name>
-            <remote-alias>RECRUITMENT_ID</remote-alias>
-            <ordinal>6</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>10</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>RECRUITING_SOURCE</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[RECRUITING_SOURCE]</local-name>
-            <parent-name>[DIM_RECRUITMENT]</parent-name>
-            <remote-alias>RECRUITING_SOURCE</remote-alias>
-            <ordinal>7</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>255</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>_ID</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[_ID (DIM_RECRUITMENT)]</local-name>
-            <parent-name>[DIM_RECRUITMENT]</parent-name>
-            <remote-alias>_ID</remote-alias>
-            <ordinal>8</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>24</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>PERFORMANCE_RATING</remote-name>
-            <remote-type>3</remote-type>
-            <local-name>[PERFORMANCE_RATING]</local-name>
-            <parent-name>[DIM_RECRUITMENT]</parent-name>
-            <remote-alias>PERFORMANCE_RATING</remote-alias>
-            <ordinal>9</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>10</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>SALES_QUOTA_PCT</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[SALES_QUOTA_PCT]</local-name>
-            <parent-name>[DIM_RECRUITMENT]</parent-name>
-            <remote-alias>SALES_QUOTA_PCT</remote-alias>
-            <ordinal>10</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>15</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
+          <metadata-record class='measure'>
             <remote-name>ATTRITION</remote-name>
-            <remote-type>3</remote-type>
+            <remote-type>20</remote-type>
             <local-name>[ATTRITION]</local-name>
-            <parent-name>[DIM_RECRUITMENT]</parent-name>
+            <parent-name>[sqlproxy]</parent-name>
             <remote-alias>ATTRITION</remote-alias>
-            <ordinal>11</ordinal>
+            <ordinal>9</ordinal>
+            <layered>true</layered>
+            <caption>Attrition</caption>
+            <family>DIM_RECRUITMENT</family>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
-            <precision>10</precision>
             <contains-null>true</contains-null>
             <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+              <attribute datatype='integer' name='field-type'>0</attribute>
             </attributes>
           </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>YEAR</remote-name>
-            <remote-type>3</remote-type>
-            <local-name>[YEAR (DIM_TEMPS)]</local-name>
-            <parent-name>[DIM_TEMPS]</parent-name>
-            <remote-alias>YEAR</remote-alias>
-            <ordinal>13</ordinal>
+          <metadata-record class='measure'>
+            <remote-name>Calculation_668221638956298240</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Calculation_668221638956298240]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Calculation_668221638956298240</remote-alias>
+            <ordinal>28</ordinal>
+            <layered>true</layered>
+            <caption>accident_rate</caption>
+            <local-type>integer</local-type>
+            <aggregation>User</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='string' name='formula'>&quot;SUM([Calculation_951666940030615563])&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Calculation_951666940019032065</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Calculation_951666940019032065]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Calculation_951666940019032065</remote-alias>
+            <ordinal>29</ordinal>
+            <layered>true</layered>
+            <caption>attrition_rate</caption>
+            <local-type>real</local-type>
+            <aggregation>User</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='string' name='formula'>&quot;AVG([ATTRITION])&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Calculation_951666940020559875</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Calculation_951666940020559875]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Calculation_951666940020559875</remote-alias>
+            <ordinal>30</ordinal>
+            <layered>true</layered>
+            <caption>avg_sales_quota_pct</caption>
+            <local-type>real</local-type>
+            <aggregation>User</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='string' name='formula'>&quot;AVG([SALES_QUOTA_PCT])&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Calculation_951666940020858884</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Calculation_951666940020858884]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Calculation_951666940020858884</remote-alias>
+            <ordinal>31</ordinal>
+            <layered>true</layered>
+            <caption>engagement_score</caption>
+            <local-type>integer</local-type>
+            <aggregation>User</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='string' name='formula'>&quot;INT(Avg([ENGAGEMENT]))&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Calculation_951666940021194757</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Calculation_951666940021194757]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Calculation_951666940021194757</remote-alias>
+            <ordinal>32</ordinal>
+            <layered>true</layered>
+            <caption>avg_salary</caption>
+            <local-type>real</local-type>
+            <aggregation>User</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='string' name='formula'>&quot;AVG([SALARY])&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Calculation_951666940022501383</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Calculation_951666940022501383]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Calculation_951666940022501383</remote-alias>
+            <ordinal>33</ordinal>
+            <layered>true</layered>
+            <caption>nbr_recruitment</caption>
+            <local-type>integer</local-type>
+            <aggregation>User</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='string' name='formula'>&quot;COUNT([RECRUITING_SOURCE])&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Calculation_951666940027842568</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Calculation_951666940027842568]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Calculation_951666940027842568</remote-alias>
+            <ordinal>34</ordinal>
+            <layered>true</layered>
+            <caption>disengaged</caption>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
-            <precision>10</precision>
             <contains-null>true</contains-null>
             <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='string' name='formula'>&quot;IF [ENGAGEMENT] = 1 OR [ENGAGEMENT]= 2&#13;&#10;THEN 1&#13;&#10;ELSE 0&#13;&#10;END&quot;</attribute>
             </attributes>
           </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>_ID</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[_ID (DIM_TEMPS)]</local-name>
-            <parent-name>[DIM_TEMPS]</parent-name>
-            <remote-alias>_ID</remote-alias>
-            <ordinal>14</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>24</width>
+          <metadata-record class='measure'>
+            <remote-name>Calculation_951666940029685769</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Calculation_951666940029685769]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Calculation_951666940029685769</remote-alias>
+            <ordinal>35</ordinal>
+            <layered>true</layered>
+            <caption>performance_measure</caption>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
             <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='string' name='formula'>&quot;If [RATING]&gt;= 4 &#13;&#10;THEN 1&#13;&#10;ELSE 0&#13;&#10;END&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Calculation_951666940030615563</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Calculation_951666940030615563]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Calculation_951666940030615563</remote-alias>
+            <ordinal>36</ordinal>
+            <layered>true</layered>
+            <caption>had_accident</caption>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='string' name='formula'>&quot;IF ISNULL([LOCATION])&#13;&#10;THEN 0&#13;&#10;ELSE&#13;&#10;1&#13;&#10;END&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Calculation_951666940073517069</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Calculation_951666940073517069]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Calculation_951666940073517069</remote-alias>
+            <ordinal>37</ordinal>
+            <layered>true</layered>
+            <caption>avg_vacation_taken</caption>
+            <local-type>integer</local-type>
+            <aggregation>User</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='string' name='formula'>&quot;INT(AVG([VACATION_DAYS_TAKEN]))&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Calculation_951666940073652238</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Calculation_951666940073652238]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Calculation_951666940073652238</remote-alias>
+            <ordinal>38</ordinal>
+            <layered>true</layered>
+            <caption>pct_disengaged</caption>
+            <local-type>real</local-type>
+            <aggregation>User</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='string' name='formula'>&quot;AVG([Calculation_951666940027842568])&quot;</attribute>
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>DEPARTMENT</remote-name>
-            <remote-type>130</remote-type>
+            <remote-type>129</remote-type>
             <local-name>[DEPARTMENT]</local-name>
-            <parent-name>[DIM_HR]</parent-name>
+            <parent-name>[sqlproxy]</parent-name>
             <remote-alias>DEPARTMENT</remote-alias>
-            <ordinal>16</ordinal>
+            <ordinal>12</ordinal>
+            <layered>true</layered>
+            <caption>Department</caption>
+            <family>DIM_HR</family>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <width>255</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='binary' />
             <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>VACATION_DAYS_TAKEN</remote-name>
-            <remote-type>3</remote-type>
-            <local-name>[VACATION_DAYS_TAKEN]</local-name>
-            <parent-name>[DIM_HR]</parent-name>
-            <remote-alias>VACATION_DAYS_TAKEN</remote-alias>
-            <ordinal>17</ordinal>
+            <remote-name>EMPLOYEE_ID (DIM_HR)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EMPLOYEE_ID (DIM_HR)]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>EMPLOYEE_ID (DIM_HR)</remote-alias>
+            <ordinal>15</ordinal>
+            <layered>true</layered>
+            <caption>Employee Id (Dim Hr)</caption>
+            <family>DIM_HR</family>
             <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>10</precision>
+            <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
             <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>ENGAGEMENT</remote-name>
-            <remote-type>3</remote-type>
-            <local-name>[ENGAGEMENT]</local-name>
-            <parent-name>[DIM_HR]</parent-name>
-            <remote-alias>ENGAGEMENT</remote-alias>
-            <ordinal>18</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>10</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>EMPLOYEE_ID</remote-name>
-            <remote-type>3</remote-type>
-            <local-name>[EMPLOYEE_ID (DIM_HR)]</local-name>
-            <parent-name>[DIM_HR]</parent-name>
+            <remote-type>20</remote-type>
+            <local-name>[EMPLOYEE_ID]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
             <remote-alias>EMPLOYEE_ID</remote-alias>
-            <ordinal>19</ordinal>
+            <ordinal>2</ordinal>
+            <layered>true</layered>
+            <caption>Employee Id</caption>
+            <family>FACT_TABLE</family>
             <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>10</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>_ID</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[_ID (DIM_HR)]</local-name>
-            <parent-name>[DIM_HR]</parent-name>
-            <remote-alias>_ID</remote-alias>
-            <ordinal>20</ordinal>
-            <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <width>24</width>
-            <contains-null>false</contains-null>
-            <collation flag='0' name='binary' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>OVERTIME_HOURS</remote-name>
-            <remote-type>3</remote-type>
-            <local-name>[OVERTIME_HOURS]</local-name>
-            <parent-name>[DIM_HR]</parent-name>
-            <remote-alias>OVERTIME_HOURS</remote-alias>
-            <ordinal>21</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>10</precision>
             <contains-null>true</contains-null>
             <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>ENGAGEMENT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ENGAGEMENT]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>ENGAGEMENT</remote-alias>
+            <ordinal>14</ordinal>
+            <layered>true</layered>
+            <caption>Engagement</caption>
+            <family>DIM_HR</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>GENDER</remote-name>
-            <remote-type>130</remote-type>
+            <remote-type>129</remote-type>
             <local-name>[GENDER]</local-name>
-            <parent-name>[DIM_HR]</parent-name>
+            <parent-name>[sqlproxy]</parent-name>
             <remote-alias>GENDER</remote-alias>
-            <ordinal>22</ordinal>
+            <ordinal>18</ordinal>
+            <layered>true</layered>
+            <caption>Gender</caption>
+            <family>DIM_HR</family>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <width>255</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='binary' />
             <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>JOB_LEVEL</remote-name>
-            <remote-type>130</remote-type>
+            <remote-type>129</remote-type>
             <local-name>[JOB_LEVEL]</local-name>
-            <parent-name>[DIM_HR]</parent-name>
+            <parent-name>[sqlproxy]</parent-name>
             <remote-alias>JOB_LEVEL</remote-alias>
-            <ordinal>23</ordinal>
+            <ordinal>19</ordinal>
+            <layered>true</layered>
+            <caption>Job Level</caption>
+            <family>DIM_HR</family>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <width>255</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='binary' />
             <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>NEW_HIRE</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[NEW_HIRE]</local-name>
-            <parent-name>[DIM_HR]</parent-name>
-            <remote-alias>NEW_HIRE</remote-alias>
-            <ordinal>24</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>255</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>SALARY</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[SALARY]</local-name>
-            <parent-name>[DIM_HR]</parent-name>
-            <remote-alias>SALARY</remote-alias>
-            <ordinal>25</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>15</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>ACCIDENT_TYPE</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[ACCIDENT_TYPE]</local-name>
-            <parent-name>[DIM_HR]</parent-name>
-            <remote-alias>ACCIDENT_TYPE</remote-alias>
-            <ordinal>26</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>255</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>YEAR</remote-name>
-            <remote-type>3</remote-type>
-            <local-name>[YEAR (DIM_HR)]</local-name>
-            <parent-name>[DIM_HR]</parent-name>
-            <remote-alias>YEAR</remote-alias>
-            <ordinal>27</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>10</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>LOCATION</remote-name>
-            <remote-type>130</remote-type>
+            <remote-type>129</remote-type>
             <local-name>[LOCATION]</local-name>
-            <parent-name>[DIM_HR]</parent-name>
+            <parent-name>[sqlproxy]</parent-name>
             <remote-alias>LOCATION</remote-alias>
-            <ordinal>28</ordinal>
+            <ordinal>24</ordinal>
+            <layered>true</layered>
+            <caption>Location</caption>
+            <family>DIM_HR</family>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <width>255</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='binary' />
             <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>RATING</remote-name>
-            <remote-type>3</remote-type>
-            <local-name>[RATING]</local-name>
-            <parent-name>[DIM_HR]</parent-name>
-            <remote-alias>RATING</remote-alias>
-            <ordinal>29</ordinal>
+            <remote-name>NEW_HIRE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NEW_HIRE]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>NEW_HIRE</remote-alias>
+            <ordinal>20</ordinal>
+            <layered>true</layered>
+            <caption>New Hire</caption>
+            <family>DIM_HR</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Number of Records</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Number of Records]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Number of Records</remote-alias>
+            <ordinal>39</ordinal>
+            <layered>true</layered>
+            <caption>Number of Records</caption>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
-            <precision>10</precision>
             <contains-null>true</contains-null>
             <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='string' name='formula'>&quot;1&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>OVERTIME_HOURS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OVERTIME_HOURS]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>OVERTIME_HOURS</remote-alias>
+            <ordinal>17</ordinal>
+            <layered>true</layered>
+            <caption>Overtime Hours</caption>
+            <family>DIM_HR</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>PERFORMANCE_RATING</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PERFORMANCE_RATING]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>PERFORMANCE_RATING</remote-alias>
+            <ordinal>7</ordinal>
+            <layered>true</layered>
+            <caption>Performance Rating</caption>
+            <family>DIM_RECRUITMENT</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>RATING</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RATING]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>RATING</remote-alias>
+            <ordinal>25</ordinal>
+            <layered>true</layered>
+            <caption>Rating</caption>
+            <family>DIM_HR</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RECRUITING_SOURCE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RECRUITING_SOURCE]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>RECRUITING_SOURCE</remote-alias>
+            <ordinal>5</ordinal>
+            <layered>true</layered>
+            <caption>Recruiting Source</caption>
+            <family>DIM_RECRUITMENT</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RECRUITMENT_ID (DIM_RECRUITMENT)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RECRUITMENT_ID (DIM_RECRUITMENT)]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>RECRUITMENT_ID (DIM_RECRUITMENT)</remote-alias>
+            <ordinal>4</ordinal>
+            <layered>true</layered>
+            <caption>Recruitment Id (Dim Recruitment)</caption>
+            <family>DIM_RECRUITMENT</family>
+            <local-type>integer</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RECRUITMENT_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RECRUITMENT_ID]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>RECRUITMENT_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <layered>true</layered>
+            <caption>Recruitment Id</caption>
+            <family>FACT_TABLE</family>
+            <local-type>integer</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>SALARY</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SALARY]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>SALARY</remote-alias>
+            <ordinal>21</ordinal>
+            <layered>true</layered>
+            <caption>Salary</caption>
+            <family>DIM_HR</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>SALES_QUOTA_PCT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SALES_QUOTA_PCT]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>SALES_QUOTA_PCT</remote-alias>
+            <ordinal>8</ordinal>
+            <layered>true</layered>
+            <caption>Sales Quota Pct</caption>
+            <family>DIM_RECRUITMENT</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>VACATION_DAYS_TAKEN</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[VACATION_DAYS_TAKEN]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>VACATION_DAYS_TAKEN</remote-alias>
+            <ordinal>13</ordinal>
+            <layered>true</layered>
+            <caption>Vacation Days Taken</caption>
+            <family>DIM_HR</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR (DIM_HR)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YEAR (DIM_HR)]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>YEAR (DIM_HR)</remote-alias>
+            <ordinal>23</ordinal>
+            <layered>true</layered>
+            <caption>Year (Dim Hr)</caption>
+            <family>DIM_HR</family>
+            <local-type>integer</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR (DIM_TEMPS)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YEAR (DIM_TEMPS)]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>YEAR (DIM_TEMPS)</remote-alias>
+            <ordinal>10</ordinal>
+            <layered>true</layered>
+            <caption>Year (Dim Temps)</caption>
+            <family>DIM_TEMPS</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YEAR]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>1</ordinal>
+            <layered>true</layered>
+            <caption>Year</caption>
+            <family>FACT_TABLE</family>
+            <local-type>integer</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_ID (DIM_HR)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[_ID (DIM_HR)]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>_ID (DIM_HR)</remote-alias>
+            <ordinal>16</ordinal>
+            <layered>true</layered>
+            <caption>_id (Dim Hr)</caption>
+            <family>DIM_HR</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_ID (DIM_RECRUITMENT)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[_ID (DIM_RECRUITMENT)]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>_ID (DIM_RECRUITMENT)</remote-alias>
+            <ordinal>6</ordinal>
+            <layered>true</layered>
+            <caption>_id (Dim Recruitment)</caption>
+            <family>DIM_RECRUITMENT</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_ID (DIM_TEMPS)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[_ID (DIM_TEMPS)]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>_ID (DIM_TEMPS)</remote-alias>
+            <ordinal>11</ordinal>
+            <layered>true</layered>
+            <caption>_id (Dim Temps)</caption>
+            <family>DIM_TEMPS</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[_ID]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>_ID</remote-alias>
+            <ordinal>3</ordinal>
+            <layered>true</layered>
+            <family>FACT_TABLE</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='boolean' name='CAP_CREATE_TEMP_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_ALWAYS_USE_LOCAL_MAPPING_TABLES'>false</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_PREFER_LOCAL_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_REMOTE_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_CASE_INSENSITIVE_CONTAINS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_EXTRACT_RANGES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SORT_BY'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERIES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERY_QUERY_CONTEXT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUPPORTS_LODJOINS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUPPORT_ANALYTIC_FUNCTIONS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_TOP_N'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_USE_QUERY_FUSION'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_LEFT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_RIGHT'>true</attribute>
+              <attribute datatype='integer' name='charset'>0</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='datasource'>&quot;&lt;?xml version=&apos;1.0&apos; encoding=&apos;utf-8&apos; ?&gt;&#10;&#10;&lt;datasource :source-version=&apos;18.1&apos; formatted-name=&apos;mongo_bi&apos; inline=&apos;true&apos; version=&apos;18.1&apos; xml:base=&apos;https://eu-west-1a.online.tableau.com&apos; xmlns:user=&apos;http://www.tableausoftware.com/xml/user&apos;&gt;&#10;  &lt;repository-location id=&apos;mongo_bi&apos; path=&apos;/t/farahensab/datasources&apos; revision=&apos;1.0&apos; site=&apos;farahensab&apos; /&gt;&#10;  &lt;connection channel=&apos;https&apos; class=&apos;sqlproxy&apos; dbname=&apos;mongo_bi&apos; directory=&apos;/dataserver&apos; port=&apos;443&apos; server=&apos;eu-west-1a.online.tableau.com&apos;&gt;&#10;    &lt;relation name=&apos;sqlproxy&apos; table=&apos;[sqlproxy]&apos; type=&apos;table&apos; /&gt;&#10;    &lt;cols&gt;&#10;      &lt;map key=&apos;[ACCIDENT_TYPE]&apos; value=&apos;[sqlproxy].[ACCIDENT_TYPE]&apos; /&gt;&#10;      &lt;map key=&apos;[ATTRITION]&apos; value=&apos;[sqlproxy].[ATTRITION]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_668221638956298240]&apos; value=&apos;[sqlproxy].[Calculation_668221638956298240]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_951666940019032065]&apos; value=&apos;[sqlproxy].[Calculation_951666940019032065]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_951666940020559875]&apos; value=&apos;[sqlproxy].[Calculation_951666940020559875]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_951666940020858884]&apos; value=&apos;[sqlproxy].[Calculation_951666940020858884]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_951666940021194757]&apos; value=&apos;[sqlproxy].[Calculation_951666940021194757]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_951666940022501383]&apos; value=&apos;[sqlproxy].[Calculation_951666940022501383]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_951666940027842568]&apos; value=&apos;[sqlproxy].[Calculation_951666940027842568]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_951666940029685769]&apos; value=&apos;[sqlproxy].[Calculation_951666940029685769]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_951666940030615563]&apos; value=&apos;[sqlproxy].[Calculation_951666940030615563]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_951666940073517069]&apos; value=&apos;[sqlproxy].[Calculation_951666940073517069]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_951666940073652238]&apos; value=&apos;[sqlproxy].[Calculation_951666940073652238]&apos; /&gt;&#10;      &lt;map key=&apos;[DEPARTMENT]&apos; value=&apos;[sqlproxy].[DEPARTMENT]&apos; /&gt;&#10;      &lt;map key=&apos;[EMPLOYEE_ID (DIM_HR)]&apos; value=&apos;[sqlproxy].[EMPLOYEE_ID (DIM_HR)]&apos; /&gt;&#10;      &lt;map key=&apos;[EMPLOYEE_ID]&apos; value=&apos;[sqlproxy].[EMPLOYEE_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[ENGAGEMENT]&apos; value=&apos;[sqlproxy].[ENGAGEMENT]&apos; /&gt;&#10;      &lt;map key=&apos;[GENDER]&apos; value=&apos;[sqlproxy].[GENDER]&apos; /&gt;&#10;      &lt;map key=&apos;[JOB_LEVEL]&apos; value=&apos;[sqlproxy].[JOB_LEVEL]&apos; /&gt;&#10;      &lt;map key=&apos;[LOCATION]&apos; value=&apos;[sqlproxy].[LOCATION]&apos; /&gt;&#10;      &lt;map key=&apos;[NEW_HIRE]&apos; value=&apos;[sqlproxy].[NEW_HIRE]&apos; /&gt;&#10;      &lt;map key=&apos;[Number of Records]&apos; value=&apos;[sqlproxy].[Number of Records]&apos; /&gt;&#10;      &lt;map key=&apos;[OVERTIME_HOURS]&apos; value=&apos;[sqlproxy].[OVERTIME_HOURS]&apos; /&gt;&#10;      &lt;map key=&apos;[PERFORMANCE_RATING]&apos; value=&apos;[sqlproxy].[PERFORMANCE_RATING]&apos; /&gt;&#10;      &lt;map key=&apos;[RATING]&apos; value=&apos;[sqlproxy].[RATING]&apos; /&gt;&#10;      &lt;map key=&apos;[RECRUITING_SOURCE]&apos; value=&apos;[sqlproxy].[RECRUITING_SOURCE]&apos; /&gt;&#10;      &lt;map key=&apos;[RECRUITMENT_ID (DIM_RECRUITMENT)]&apos; value=&apos;[sqlproxy].[RECRUITMENT_ID (DIM_RECRUITMENT)]&apos; /&gt;&#10;      &lt;map key=&apos;[RECRUITMENT_ID]&apos; value=&apos;[sqlproxy].[RECRUITMENT_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[SALARY]&apos; value=&apos;[sqlproxy].[SALARY]&apos; /&gt;&#10;      &lt;map key=&apos;[SALES_QUOTA_PCT]&apos; value=&apos;[sqlproxy].[SALES_QUOTA_PCT]&apos; /&gt;&#10;      &lt;map key=&apos;[VACATION_DAYS_TAKEN]&apos; value=&apos;[sqlproxy].[VACATION_DAYS_TAKEN]&apos; /&gt;&#10;      &lt;map key=&apos;[YEAR (DIM_HR)]&apos; value=&apos;[sqlproxy].[YEAR (DIM_HR)]&apos; /&gt;&#10;      &lt;map key=&apos;[YEAR (DIM_TEMPS)]&apos; value=&apos;[sqlproxy].[YEAR (DIM_TEMPS)]&apos; /&gt;&#10;      &lt;map key=&apos;[YEAR]&apos; value=&apos;[sqlproxy].[YEAR]&apos; /&gt;&#10;      &lt;map key=&apos;[_ID (DIM_HR)]&apos; value=&apos;[sqlproxy].[_ID (DIM_HR)]&apos; /&gt;&#10;      &lt;map key=&apos;[_ID (DIM_RECRUITMENT)]&apos; value=&apos;[sqlproxy].[_ID (DIM_RECRUITMENT)]&apos; /&gt;&#10;      &lt;map key=&apos;[_ID (DIM_TEMPS)]&apos; value=&apos;[sqlproxy].[_ID (DIM_TEMPS)]&apos; /&gt;&#10;      &lt;map key=&apos;[_ID]&apos; value=&apos;[sqlproxy].[_ID]&apos; /&gt;&#10;    &lt;/cols&gt;&#10;  &lt;/connection&gt;&#10;  &lt;aliases enabled=&apos;yes&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Accident Type&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[ACCIDENT_TYPE]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Attrition&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[ATTRITION]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;accident_rate&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_668221638956298240]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;SUM([Calculation_951666940030615563])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;attrition_rate&apos; datatype=&apos;real&apos; datatype-customized=&apos;true&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_951666940019032065]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;AVG([ATTRITION])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;avg_sales_quota_pct&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_951666940020559875]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;AVG([SALES_QUOTA_PCT])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;engagement_score&apos; datatype=&apos;integer&apos; datatype-customized=&apos;true&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_951666940020858884]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;INT(Avg([ENGAGEMENT]))&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;avg_salary&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_951666940021194757]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;AVG([SALARY])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;nbr_recruitment&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_951666940022501383]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;COUNT([RECRUITING_SOURCE])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;disengaged&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_951666940027842568]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;IF [ENGAGEMENT] = 1 OR [ENGAGEMENT]= 2&amp;\#13;&amp;\#10;THEN 1&amp;\#13;&amp;\#10;ELSE 0&amp;\#13;&amp;\#10;END&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;performance_measure&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_951666940029685769]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;If [RATING]&amp;gt;= 4 &amp;\#13;&amp;\#10;THEN 1&amp;\#13;&amp;\#10;ELSE 0&amp;\#13;&amp;\#10;END&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;had_accident&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_951666940030615563]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;IF ISNULL([LOCATION])&amp;\#13;&amp;\#10;THEN 0&amp;\#13;&amp;\#10;ELSE&amp;\#13;&amp;\#10;1&amp;\#13;&amp;\#10;END&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;avg_vacation_taken&apos; datatype=&apos;integer&apos; datatype-customized=&apos;true&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_951666940073517069]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;INT(AVG([VACATION_DAYS_TAKEN]))&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;pct_disengaged&apos; datatype=&apos;real&apos; datatype-customized=&apos;true&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_951666940073652238]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;AVG([Calculation_951666940027842568])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Department&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[DEPARTMENT]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Employee Id (Dim Hr)&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[EMPLOYEE_ID (DIM_HR)]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Employee Id&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[EMPLOYEE_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Engagement&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[ENGAGEMENT]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Gender&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[GENDER]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Job Level&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[JOB_LEVEL]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Location&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[LOCATION]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;New Hire&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[NEW_HIRE]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Number of Records]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; user:auto-column=&apos;numrec&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;1&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Overtime Hours&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[OVERTIME_HOURS]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Performance Rating&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[PERFORMANCE_RATING]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Rating&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[RATING]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Recruiting Source&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[RECRUITING_SOURCE]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Recruitment Id (Dim Recruitment)&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[RECRUITMENT_ID (DIM_RECRUITMENT)]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Recruitment Id&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[RECRUITMENT_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Salary&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[SALARY]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Sales Quota Pct&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[SALES_QUOTA_PCT]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Vacation Days Taken&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[VACATION_DAYS_TAKEN]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Year (Dim Hr)&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[YEAR (DIM_HR)]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Year (Dim Temps)&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[YEAR (DIM_TEMPS)]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Year&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[YEAR]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;_id (Dim Hr)&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[_ID (DIM_HR)]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;_id (Dim Recruitment)&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[_ID (DIM_RECRUITMENT)]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;_id (Dim Temps)&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[_ID (DIM_TEMPS)]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;group caption=&apos;Action (Department)&apos; hidden=&apos;true&apos; name=&apos;[Action (Department)]&apos; name-style=&apos;unqualified&apos; user:auto-column=&apos;sheet_link&apos;&gt;&#10;    &lt;groupfilter function=&apos;crossjoin&apos;&gt;&#10;      &lt;groupfilter function=&apos;level-members&apos; level=&apos;[DEPARTMENT]&apos; /&gt;&#10;    &lt;/groupfilter&gt;&#10;  &lt;/group&gt;&#10;  &lt;group caption=&apos;Action (Recruiting Source)&apos; hidden=&apos;true&apos; name=&apos;[Action (Recruiting Source)]&apos; name-style=&apos;unqualified&apos; user:auto-column=&apos;sheet_link&apos;&gt;&#10;    &lt;groupfilter function=&apos;crossjoin&apos;&gt;&#10;      &lt;groupfilter function=&apos;level-members&apos; level=&apos;[RECRUITING_SOURCE]&apos; /&gt;&#10;    &lt;/groupfilter&gt;&#10;  &lt;/group&gt;&#10;  &lt;layout dim-ordering=&apos;alphabetic&apos; dim-percentage=&apos;0.342324&apos; measure-ordering=&apos;alphabetic&apos; measure-percentage=&apos;0.657676&apos; rowDisplayCount=&apos;1470&apos; show-aliased-fields=&apos;true&apos; show-structure=&apos;true&apos; /&gt;&#10;  &lt;semantic-values&gt;&#10;    &lt;semantic-value key=&apos;[Country].[Name]&apos; value=&apos;&amp;quot;France&amp;quot;&apos; /&gt;&#10;  &lt;/semantic-values&gt;&#10;&lt;/datasource&gt;&#10;&quot;</attribute>
+              <attribute datatype='string' name='dialect-definition'>&quot;&lt;dialect-definition&gt;&#10;  &lt;primary-dialect class=&apos;hyper&apos; version=&apos;0.0.0&apos;&gt;&#10;  &lt;/primary-dialect&gt;&#10;&lt;/dialect-definition&gt;&#10;&quot;</attribute>
+              <attribute datatype='boolean' name='extract-active'>true</attribute>
+              <attribute datatype='boolean' name='fast-get-server-time'>true</attribute>
+              <attribute datatype='string' name='update-time'>&quot;4/26/2020 3:10:52 PM&quot;</attribute>
             </attributes>
           </metadata-record>
         </metadata-records>
       </connection>
+      <overridable-settings>
+        <date-options fiscal-year-start='january' start-of-week='sunday' />
+        <default-date-format />
+        <default-calendar-type>Gregorian</default-calendar-type>
+      </overridable-settings>
       <aliases enabled='yes' />
-      <column caption='Accident Type' datatype='string' name='[ACCIDENT_TYPE]' role='dimension' type='nominal' />
-      <column caption='Attrition' datatype='integer' name='[ATTRITION]' role='measure' type='quantitative' />
-      <column caption='accident_rate' datatype='integer' name='[Calculation_668221638956298240]' role='measure' type='quantitative'>
+      <column aggregation='Count' caption='Accident Type' datatype='string' default-type='nominal' layered='true' name='[ACCIDENT_TYPE]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' caption='Attrition' datatype='integer' default-type='quantitative' layered='true' name='[ATTRITION]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='User' caption='accident_rate' datatype='integer' default-type='quantitative' layered='true' name='[Calculation_668221638956298240]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default'>
         <calculation class='tableau' formula='SUM([Calculation_951666940030615563])' />
       </column>
-      <column caption='attrition_rate' datatype='real' datatype-customized='true' name='[Calculation_951666940019032065]' role='measure' type='quantitative'>
+      <column aggregation='User' caption='attrition_rate' datatype='real' datatype-customized='true' default-type='quantitative' layered='true' name='[Calculation_951666940019032065]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default'>
         <calculation class='tableau' formula='AVG([ATTRITION])' />
       </column>
-      <column caption='avg_sales_quota_pct' datatype='real' name='[Calculation_951666940020559875]' role='measure' type='quantitative'>
+      <column aggregation='User' caption='avg_sales_quota_pct' datatype='real' default-type='quantitative' layered='true' name='[Calculation_951666940020559875]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default'>
         <calculation class='tableau' formula='AVG([SALES_QUOTA_PCT])' />
       </column>
-      <column caption='engagement_score' datatype='integer' datatype-customized='true' name='[Calculation_951666940020858884]' role='measure' type='quantitative'>
+      <column aggregation='User' caption='engagement_score' datatype='integer' datatype-customized='true' default-type='quantitative' layered='true' name='[Calculation_951666940020858884]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default'>
         <calculation class='tableau' formula='INT(Avg([ENGAGEMENT]))' />
       </column>
-      <column caption='avg_salary' datatype='real' name='[Calculation_951666940021194757]' role='measure' type='quantitative'>
+      <column aggregation='User' caption='avg_salary' datatype='real' default-type='quantitative' layered='true' name='[Calculation_951666940021194757]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default'>
         <calculation class='tableau' formula='AVG([SALARY])' />
       </column>
-      <column caption='nbr_recruitment' datatype='integer' name='[Calculation_951666940022501383]' role='measure' type='quantitative'>
+      <column aggregation='User' caption='nbr_recruitment' datatype='integer' default-type='quantitative' layered='true' name='[Calculation_951666940022501383]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default'>
         <calculation class='tableau' formula='COUNT([RECRUITING_SOURCE])' />
       </column>
-      <column caption='disengaged' datatype='integer' name='[Calculation_951666940027842568]' role='measure' type='quantitative'>
+      <column aggregation='Sum' caption='disengaged' datatype='integer' default-type='quantitative' layered='true' name='[Calculation_951666940027842568]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default'>
         <calculation class='tableau' formula='IF [ENGAGEMENT] = 1 OR [ENGAGEMENT]= 2&#13;&#10;THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
       </column>
-      <column caption='performance_measure' datatype='integer' name='[Calculation_951666940029685769]' role='measure' type='quantitative'>
+      <column aggregation='Sum' caption='performance_measure' datatype='integer' default-type='quantitative' layered='true' name='[Calculation_951666940029685769]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default'>
         <calculation class='tableau' formula='If [RATING]&gt;= 4 &#13;&#10;THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
       </column>
-      <column caption='had_accident' datatype='integer' name='[Calculation_951666940030615563]' role='measure' type='quantitative'>
+      <column aggregation='Sum' caption='had_accident' datatype='integer' default-type='quantitative' layered='true' name='[Calculation_951666940030615563]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default'>
         <calculation class='tableau' formula='IF ISNULL([LOCATION])&#13;&#10;THEN 0&#13;&#10;ELSE&#13;&#10;1&#13;&#10;END' />
       </column>
-      <column caption='avg_vacation_taken' datatype='integer' datatype-customized='true' name='[Calculation_951666940073517069]' role='measure' type='quantitative'>
+      <column aggregation='User' caption='avg_vacation_taken' datatype='integer' datatype-customized='true' default-type='quantitative' layered='true' name='[Calculation_951666940073517069]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default'>
         <calculation class='tableau' formula='INT(AVG([VACATION_DAYS_TAKEN]))' />
       </column>
-      <column caption='pct_disengaged' datatype='real' datatype-customized='true' name='[Calculation_951666940073652238]' role='measure' type='quantitative'>
+      <column aggregation='User' caption='pct_disengaged' datatype='real' datatype-customized='true' default-type='quantitative' layered='true' name='[Calculation_951666940073652238]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default'>
         <calculation class='tableau' formula='AVG([Calculation_951666940027842568])' />
       </column>
-      <column caption='Department' datatype='string' name='[DEPARTMENT]' role='dimension' type='nominal' />
-      <column caption='Employee Id (Dim Hr)' datatype='integer' name='[EMPLOYEE_ID (DIM_HR)]' role='dimension' type='ordinal' />
-      <column caption='Employee Id' datatype='integer' name='[EMPLOYEE_ID]' role='dimension' type='ordinal' />
-      <column caption='Engagement' datatype='integer' name='[ENGAGEMENT]' role='measure' type='quantitative' />
-      <column caption='Gender' datatype='string' name='[GENDER]' role='dimension' type='nominal' />
-      <column caption='Job Level' datatype='string' name='[JOB_LEVEL]' role='dimension' type='nominal' />
-      <column caption='Location' datatype='string' name='[LOCATION]' role='dimension' type='nominal' />
-      <column caption='New Hire' datatype='string' name='[NEW_HIRE]' role='dimension' type='nominal' />
-      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+      <column aggregation='Count' caption='Department' datatype='string' default-type='nominal' layered='true' name='[DEPARTMENT]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Employee Id (Dim Hr)' datatype='integer' default-type='ordinal' layered='true' name='[EMPLOYEE_ID (DIM_HR)]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' caption='Employee Id' datatype='integer' default-type='ordinal' layered='true' name='[EMPLOYEE_ID]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' caption='Engagement' datatype='integer' default-type='quantitative' layered='true' name='[ENGAGEMENT]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' caption='Gender' datatype='string' default-type='nominal' layered='true' name='[GENDER]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Job Level' datatype='string' default-type='nominal' layered='true' name='[JOB_LEVEL]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Location' datatype='string' default-type='nominal' layered='true' name='[LOCATION]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='New Hire' datatype='string' default-type='nominal' layered='true' name='[NEW_HIRE]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[Number of Records]' pivot='key' role='measure' type='quantitative' user-datatype='integer' user:auto-column='numrec' visual-totals='Default'>
         <calculation class='tableau' formula='1' />
       </column>
-      <column caption='Overtime Hours' datatype='integer' name='[OVERTIME_HOURS]' role='measure' type='quantitative' />
-      <column caption='Performance Rating' datatype='integer' name='[PERFORMANCE_RATING]' role='measure' type='quantitative' />
-      <column caption='Rating' datatype='integer' name='[RATING]' role='measure' type='quantitative' />
-      <column caption='Recruiting Source' datatype='string' name='[RECRUITING_SOURCE]' role='dimension' type='nominal' />
-      <column caption='Recruitment Id (Dim Recruitment)' datatype='integer' name='[RECRUITMENT_ID (DIM_RECRUITMENT)]' role='dimension' type='ordinal' />
-      <column caption='Recruitment Id' datatype='integer' name='[RECRUITMENT_ID]' role='dimension' type='ordinal' />
-      <column caption='Salary' datatype='real' name='[SALARY]' role='measure' type='quantitative' />
-      <column caption='Sales Quota Pct' datatype='real' name='[SALES_QUOTA_PCT]' role='measure' type='quantitative' />
-      <column caption='Vacation Days Taken' datatype='integer' name='[VACATION_DAYS_TAKEN]' role='measure' type='quantitative' />
-      <column caption='Year (Dim Hr)' datatype='integer' name='[YEAR (DIM_HR)]' role='dimension' type='quantitative' />
-      <column aggregation='Sum' caption='Year (Dim Temps)' datatype='integer' name='[YEAR (DIM_TEMPS)]' role='dimension' type='quantitative' />
-      <column caption='Year' datatype='integer' name='[YEAR]' role='dimension' type='quantitative' />
-      <column caption='_id (Dim Hr)' datatype='string' name='[_ID (DIM_HR)]' role='dimension' type='nominal' />
-      <column caption='_id (Dim Recruitment)' datatype='string' name='[_ID (DIM_RECRUITMENT)]' role='dimension' type='nominal' />
-      <column caption='_id (Dim Temps)' datatype='string' name='[_ID (DIM_TEMPS)]' role='dimension' type='nominal' />
-      <layout dim-ordering='alphabetic' dim-percentage='0.344398' measure-ordering='alphabetic' measure-percentage='0.655602' rowDisplayCount='1470' show-aliased-fields='true' show-structure='true' />
+      <column aggregation='Sum' caption='Overtime Hours' datatype='integer' default-type='quantitative' layered='true' name='[OVERTIME_HOURS]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' caption='Performance Rating' datatype='integer' default-type='quantitative' layered='true' name='[PERFORMANCE_RATING]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' caption='Rating' datatype='integer' default-type='quantitative' layered='true' name='[RATING]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' caption='Recruiting Source' datatype='string' default-type='nominal' layered='true' name='[RECRUITING_SOURCE]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Recruitment Id (Dim Recruitment)' datatype='integer' default-type='ordinal' layered='true' name='[RECRUITMENT_ID (DIM_RECRUITMENT)]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' caption='Recruitment Id' datatype='integer' default-type='ordinal' layered='true' name='[RECRUITMENT_ID]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' caption='Salary' datatype='real' default-type='quantitative' layered='true' name='[SALARY]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Sales Quota Pct' datatype='real' default-type='quantitative' layered='true' name='[SALES_QUOTA_PCT]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='Vacation Days Taken' datatype='integer' default-type='quantitative' layered='true' name='[VACATION_DAYS_TAKEN]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' caption='Year (Dim Hr)' datatype='integer' default-type='quantitative' layered='true' name='[YEAR (DIM_HR)]' pivot='key' role='dimension' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' caption='Year (Dim Temps)' datatype='integer' default-type='quantitative' layered='true' name='[YEAR (DIM_TEMPS)]' pivot='key' role='dimension' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' caption='Year' datatype='integer' default-type='quantitative' layered='true' name='[YEAR]' pivot='key' role='dimension' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' caption='_id (Dim Hr)' datatype='string' default-type='nominal' layered='true' name='[_ID (DIM_HR)]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='_id (Dim Recruitment)' datatype='string' default-type='nominal' layered='true' name='[_ID (DIM_RECRUITMENT)]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='_id (Dim Temps)' datatype='string' default-type='nominal' layered='true' name='[_ID (DIM_TEMPS)]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[_ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <group auto-hidden='true' caption='Action (Department)' hidden='true' layered='true' name='[Action (Department)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[DEPARTMENT]' />
+        </groupfilter>
+      </group>
+      <group auto-hidden='true' caption='Action (Recruiting Source)' hidden='true' layered='true' name='[Action (Recruiting Source)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[RECRUITING_SOURCE]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.217842' measure-ordering='alphabetic' measure-percentage='0.782158' rowDisplayCount='1470' show-aliased-fields='true' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
       </semantic-values>
     </datasource>
   </datasources>
+  <actions>
+    <action caption='Filtre 1 (généré)' name='[Action1]'>
+      <activation auto-clear='true' type='on-hover' />
+      <source dashboard='Dashboard' type='sheet' worksheet='Best recruiting source' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Accidents,Engagement' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+    <action caption='Filtre 2 (généré)' name='[Action2]'>
+      <activation auto-clear='true' type='on-hover' />
+      <source dashboard='Dashboard' type='sheet' worksheet='Engagement' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Accidents,Best recruiting source' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+  </actions>
   <worksheets>
     <worksheet name='Accidents'>
       <layout-options>
         <title>
           <formatted-text>
-            <run>When and Where the accident rate increase the most?</run>
+            <run bold='true' fontname='Benton Sans Book'>When and Where the accident rate increase the most?</run>
           </formatted-text>
         </title>
       </layout-options>
       <table>
         <view>
           <datasources>
-            <datasource caption='mongo_bi' name='federated.10mvfo20tzm16f109qeqc17cjitd' />
+            <datasource caption='mongo_bi' name='sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0' />
           </datasources>
-          <datasource-dependencies datasource='federated.10mvfo20tzm16f109qeqc17cjitd'>
-            <column caption='accident_rate' datatype='integer' name='[Calculation_668221638956298240]' role='measure' type='quantitative'>
+          <datasource-dependencies datasource='sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0'>
+            <column aggregation='User' caption='accident_rate' datatype='integer' default-type='quantitative' layered='true' name='[Calculation_668221638956298240]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default'>
               <calculation class='tableau' formula='SUM([Calculation_951666940030615563])' />
             </column>
-            <column caption='had_accident' datatype='integer' name='[Calculation_951666940030615563]' role='measure' type='quantitative'>
+            <column aggregation='Sum' caption='had_accident' datatype='integer' default-type='quantitative' layered='true' name='[Calculation_951666940030615563]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default'>
               <calculation class='tableau' formula='IF ISNULL([LOCATION])&#13;&#10;THEN 0&#13;&#10;ELSE&#13;&#10;1&#13;&#10;END' />
             </column>
-            <column caption='Location' datatype='string' name='[LOCATION]' role='dimension' type='nominal' />
-            <column caption='Year (Dim Hr)' datatype='integer' name='[YEAR (DIM_HR)]' role='dimension' type='quantitative' />
+            <column aggregation='Count' caption='Location' datatype='string' default-type='nominal' layered='true' name='[LOCATION]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' caption='Year (Dim Hr)' datatype='integer' default-type='quantitative' layered='true' name='[YEAR (DIM_HR)]' pivot='key' role='dimension' type='quantitative' user-datatype='integer' visual-totals='Default' />
             <column-instance column='[LOCATION]' derivation='None' name='[none:LOCATION:nk]' pivot='key' type='nominal' />
             <column-instance column='[YEAR (DIM_HR)]' derivation='None' name='[none:YEAR (DIM_HR):qk]' pivot='key' type='quantitative' />
             <column-instance column='[Calculation_668221638956298240]' derivation='User' name='[usr:Calculation_668221638956298240:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
-          <filter class='categorical' column='[federated.10mvfo20tzm16f109qeqc17cjitd].[none:LOCATION:nk]'>
+          <filter class='categorical' column='[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[none:LOCATION:nk]'>
             <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
               <groupfilter function='level-members' level='[none:LOCATION:nk]' />
               <groupfilter function='member' level='[none:LOCATION:nk]' member='%null%' />
             </groupfilter>
           </filter>
           <slices>
-            <column>[federated.10mvfo20tzm16f109qeqc17cjitd].[none:LOCATION:nk]</column>
+            <column>[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[none:LOCATION:nk]</column>
           </slices>
           <aggregation value='true' />
         </view>
         <style>
           <style-rule element='table'>
-            <format attr='omit-on-special' field='[federated.10mvfo20tzm16f109qeqc17cjitd].[usr:Calculation_668221638956298240:qk]' value='false' />
-            <format attr='break-on-special' field='[federated.10mvfo20tzm16f109qeqc17cjitd].[usr:Calculation_668221638956298240:qk]' value='false' />
-            <format attr='show-null-value-warning' field='[federated.10mvfo20tzm16f109qeqc17cjitd].[usr:Calculation_668221638956298240:qk]' value='false' />
+            <format attr='omit-on-special' field='[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[usr:Calculation_668221638956298240:qk]' value='false' />
+            <format attr='break-on-special' field='[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[usr:Calculation_668221638956298240:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[usr:Calculation_668221638956298240:qk]' value='false' />
           </style-rule>
         </style>
         <panes>
@@ -765,39 +905,48 @@
             </style>
           </pane>
         </panes>
-        <rows>[federated.10mvfo20tzm16f109qeqc17cjitd].[usr:Calculation_668221638956298240:qk]</rows>
-        <cols>([federated.10mvfo20tzm16f109qeqc17cjitd].[none:LOCATION:nk] * [federated.10mvfo20tzm16f109qeqc17cjitd].[none:YEAR (DIM_HR):qk])</cols>
+        <rows>[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[usr:Calculation_668221638956298240:qk]</rows>
+        <cols>([sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[none:LOCATION:nk] * [sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[none:YEAR (DIM_HR):qk])</cols>
       </table>
       <simple-id uuid='{C0F7B74C-96AD-4686-BF86-2CBD1E5948D8}' />
     </worksheet>
     <worksheet name='Best recruiting source'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Benton Sans Book'>&lt;</run>
+            <run bold='true' fontname='Benton Sans Book'>Sheet Name</run>
+            <run bold='true' fontname='Benton Sans Book'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
       <table>
         <view>
           <datasources>
-            <datasource caption='mongo_bi' name='federated.10mvfo20tzm16f109qeqc17cjitd' />
+            <datasource caption='mongo_bi' name='sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0' />
           </datasources>
-          <datasource-dependencies datasource='federated.10mvfo20tzm16f109qeqc17cjitd'>
-            <column caption='Attrition' datatype='integer' name='[ATTRITION]' role='measure' type='quantitative' />
-            <column caption='attrition_rate' datatype='real' datatype-customized='true' name='[Calculation_951666940019032065]' role='measure' type='quantitative'>
+          <datasource-dependencies datasource='sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0'>
+            <column aggregation='Sum' caption='Attrition' datatype='integer' default-type='quantitative' layered='true' name='[ATTRITION]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+            <column aggregation='User' caption='attrition_rate' datatype='real' datatype-customized='true' default-type='quantitative' layered='true' name='[Calculation_951666940019032065]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default'>
               <calculation class='tableau' formula='AVG([ATTRITION])' />
             </column>
-            <column caption='avg_sales_quota_pct' datatype='real' name='[Calculation_951666940020559875]' role='measure' type='quantitative'>
+            <column aggregation='User' caption='avg_sales_quota_pct' datatype='real' default-type='quantitative' layered='true' name='[Calculation_951666940020559875]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default'>
               <calculation class='tableau' formula='AVG([SALES_QUOTA_PCT])' />
             </column>
-            <column caption='Recruiting Source' datatype='string' name='[RECRUITING_SOURCE]' role='dimension' type='nominal' />
-            <column caption='Sales Quota Pct' datatype='real' name='[SALES_QUOTA_PCT]' role='measure' type='quantitative' />
+            <column aggregation='Count' caption='Recruiting Source' datatype='string' default-type='nominal' layered='true' name='[RECRUITING_SOURCE]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Sum' caption='Sales Quota Pct' datatype='real' default-type='quantitative' layered='true' name='[SALES_QUOTA_PCT]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
             <column-instance column='[RECRUITING_SOURCE]' derivation='None' name='[none:RECRUITING_SOURCE:nk]' pivot='key' type='nominal' />
             <column-instance column='[Calculation_951666940019032065]' derivation='User' name='[usr:Calculation_951666940019032065:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Calculation_951666940020559875]' derivation='User' name='[usr:Calculation_951666940020559875:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
-          <filter class='categorical' column='[federated.10mvfo20tzm16f109qeqc17cjitd].[none:RECRUITING_SOURCE:nk]' kind='hide'>
+          <filter class='categorical' column='[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[none:RECRUITING_SOURCE:nk]' kind='hide'>
             <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
               <groupfilter function='level-members' level='[none:RECRUITING_SOURCE:nk]' />
               <groupfilter function='member' level='[none:RECRUITING_SOURCE:nk]' member='%null%' />
             </groupfilter>
           </filter>
           <shelf-sorts>
-            <shelf-sort-v2 dimension-to-sort='[federated.10mvfo20tzm16f109qeqc17cjitd].[none:RECRUITING_SOURCE:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.10mvfo20tzm16f109qeqc17cjitd].[usr:Calculation_951666940020559875:qk]' shelf='columns' />
+            <shelf-sort-v2 dimension-to-sort='[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[none:RECRUITING_SOURCE:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[usr:Calculation_951666940020559875:qk]' shelf='columns' />
           </shelf-sorts>
           <aggregation value='true' />
         </view>
@@ -818,7 +967,7 @@
               </style-rule>
             </style>
           </pane>
-          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.10mvfo20tzm16f109qeqc17cjitd].[usr:Calculation_951666940020559875:qk]'>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[usr:Calculation_951666940020559875:qk]'>
             <view>
               <breakdown value='auto' />
             </view>
@@ -834,7 +983,7 @@
               </style-rule>
             </style>
           </pane>
-          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.10mvfo20tzm16f109qeqc17cjitd].[usr:Calculation_951666940019032065:qk]'>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[usr:Calculation_951666940019032065:qk]'>
             <view>
               <breakdown value='auto' />
             </view>
@@ -851,8 +1000,8 @@
             </style>
           </pane>
         </panes>
-        <rows>([federated.10mvfo20tzm16f109qeqc17cjitd].[usr:Calculation_951666940020559875:qk] + [federated.10mvfo20tzm16f109qeqc17cjitd].[usr:Calculation_951666940019032065:qk])</rows>
-        <cols>[federated.10mvfo20tzm16f109qeqc17cjitd].[none:RECRUITING_SOURCE:nk]</cols>
+        <rows>([sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[usr:Calculation_951666940020559875:qk] + [sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[usr:Calculation_951666940019032065:qk])</rows>
+        <cols>[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[none:RECRUITING_SOURCE:nk]</cols>
       </table>
       <simple-id uuid='{8851B455-8137-4895-870C-B351C9631C68}' />
     </worksheet>
@@ -860,50 +1009,54 @@
       <layout-options>
         <title>
           <formatted-text>
-            <run fontcolor='#3d4251' fontname='Benton Sans Book' lmargin='120'>What is driving low employee engagement?</run>
+            <run bold='true' fontcolor='#3d4251' fontname='Benton Sans Book' lmargin='120'>What is driving low employee engagement?</run>
           </formatted-text>
         </title>
       </layout-options>
       <table>
         <view>
           <datasources>
-            <datasource caption='mongo_bi' name='federated.10mvfo20tzm16f109qeqc17cjitd' />
+            <datasource caption='mongo_bi' name='sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0' />
           </datasources>
-          <datasource-dependencies datasource='federated.10mvfo20tzm16f109qeqc17cjitd'>
-            <column caption='avg_salary' datatype='real' name='[Calculation_951666940021194757]' role='measure' type='quantitative'>
+          <datasource-dependencies datasource='sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0'>
+            <column aggregation='User' caption='avg_salary' datatype='real' default-type='quantitative' layered='true' name='[Calculation_951666940021194757]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default'>
               <calculation class='tableau' formula='AVG([SALARY])' />
             </column>
-            <column caption='disengaged' datatype='integer' name='[Calculation_951666940027842568]' role='measure' type='quantitative'>
+            <column aggregation='Sum' caption='disengaged' datatype='integer' default-type='quantitative' layered='true' name='[Calculation_951666940027842568]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default'>
               <calculation class='tableau' formula='IF [ENGAGEMENT] = 1 OR [ENGAGEMENT]= 2&#13;&#10;THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
             </column>
-            <column caption='avg_vacation_taken' datatype='integer' datatype-customized='true' name='[Calculation_951666940073517069]' role='measure' type='quantitative'>
+            <column aggregation='User' caption='avg_vacation_taken' datatype='integer' datatype-customized='true' default-type='quantitative' layered='true' name='[Calculation_951666940073517069]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default'>
               <calculation class='tableau' formula='INT(AVG([VACATION_DAYS_TAKEN]))' />
             </column>
-            <column caption='pct_disengaged' datatype='real' datatype-customized='true' name='[Calculation_951666940073652238]' role='measure' type='quantitative'>
+            <column aggregation='User' caption='pct_disengaged' datatype='real' datatype-customized='true' default-type='quantitative' layered='true' name='[Calculation_951666940073652238]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default'>
               <calculation class='tableau' formula='AVG([Calculation_951666940027842568])' />
             </column>
-            <column caption='Department' datatype='string' name='[DEPARTMENT]' role='dimension' type='nominal' />
-            <column caption='Engagement' datatype='integer' name='[ENGAGEMENT]' role='measure' type='quantitative' />
-            <column caption='Salary' datatype='real' name='[SALARY]' role='measure' type='quantitative' />
-            <column caption='Vacation Days Taken' datatype='integer' name='[VACATION_DAYS_TAKEN]' role='measure' type='quantitative' />
+            <column aggregation='Count' caption='Department' datatype='string' default-type='nominal' layered='true' name='[DEPARTMENT]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Sum' caption='Engagement' datatype='integer' default-type='quantitative' layered='true' name='[ENGAGEMENT]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+            <column aggregation='Sum' caption='Salary' datatype='real' default-type='quantitative' layered='true' name='[SALARY]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column aggregation='Sum' caption='Vacation Days Taken' datatype='integer' default-type='quantitative' layered='true' name='[VACATION_DAYS_TAKEN]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
             <column-instance column='[DEPARTMENT]' derivation='None' name='[none:DEPARTMENT:nk]' pivot='key' type='nominal' />
             <column-instance column='[Calculation_951666940021194757]' derivation='User' name='[usr:Calculation_951666940021194757:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Calculation_951666940073517069]' derivation='User' name='[usr:Calculation_951666940073517069:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Calculation_951666940073652238]' derivation='User' name='[usr:Calculation_951666940073652238:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
-          <filter class='categorical' column='[federated.10mvfo20tzm16f109qeqc17cjitd].[:Measure Names]'>
+          <filter class='categorical' column='[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[:Measure Names]'>
             <groupfilter function='union' user:op='manual'>
-              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.10mvfo20tzm16f109qeqc17cjitd].[usr:Calculation_951666940021194757:qk]&quot;' />
-              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.10mvfo20tzm16f109qeqc17cjitd].[usr:Calculation_951666940073517069:qk]&quot;' />
-              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.10mvfo20tzm16f109qeqc17cjitd].[usr:Calculation_951666940073652238:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[usr:Calculation_951666940021194757:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[usr:Calculation_951666940073517069:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[usr:Calculation_951666940073652238:qk]&quot;' />
             </groupfilter>
           </filter>
           <slices>
-            <column>[federated.10mvfo20tzm16f109qeqc17cjitd].[:Measure Names]</column>
+            <column>[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[:Measure Names]</column>
           </slices>
           <aggregation value='true' />
         </view>
-        <style />
+        <style>
+          <style-rule element='header'>
+            <format attr='height' field='[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[none:DEPARTMENT:nk]' value='21' />
+          </style-rule>
+        </style>
         <panes>
           <pane selection-relaxation-option='selection-relaxation-allow'>
             <view>
@@ -911,32 +1064,53 @@
             </view>
             <mark class='Shape' />
             <encodings>
-              <color column='[federated.10mvfo20tzm16f109qeqc17cjitd].[:Measure Names]' />
+              <color column='[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[:Measure Names]' />
             </encodings>
           </pane>
         </panes>
-        <rows>[federated.10mvfo20tzm16f109qeqc17cjitd].[Multiple Values]</rows>
-        <cols>([federated.10mvfo20tzm16f109qeqc17cjitd].[none:DEPARTMENT:nk] / [federated.10mvfo20tzm16f109qeqc17cjitd].[:Measure Names])</cols>
+        <rows>[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[Multiple Values]</rows>
+        <cols>([sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[none:DEPARTMENT:nk] / [sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[:Measure Names])</cols>
       </table>
       <simple-id uuid='{BB61AA54-EE92-4374-BE27-D6B9C9CD536B}' />
     </worksheet>
     <worksheet name='High Performers'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Benton Sans Book'>&lt;</run>
+            <run bold='true' fontname='Benton Sans Book'>Sheet Name</run>
+            <run bold='true' fontname='Benton Sans Book'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
       <table>
         <view>
           <datasources>
-            <datasource caption='mongo_bi' name='federated.10mvfo20tzm16f109qeqc17cjitd' />
+            <datasource caption='mongo_bi' name='sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0' />
           </datasources>
-          <datasource-dependencies datasource='federated.10mvfo20tzm16f109qeqc17cjitd'>
-            <column caption='performance_measure' datatype='integer' name='[Calculation_951666940029685769]' role='measure' type='quantitative'>
+          <datasource-dependencies datasource='sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0'>
+            <column aggregation='Sum' caption='performance_measure' datatype='integer' default-type='quantitative' layered='true' name='[Calculation_951666940029685769]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default'>
               <calculation class='tableau' formula='If [RATING]&gt;= 4 &#13;&#10;THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
             </column>
-            <column caption='Gender' datatype='string' name='[GENDER]' role='dimension' type='nominal' />
-            <column caption='Job Level' datatype='string' name='[JOB_LEVEL]' role='dimension' type='nominal' />
-            <column caption='Rating' datatype='integer' name='[RATING]' role='measure' type='quantitative' />
+            <column aggregation='Count' caption='Department' datatype='string' default-type='nominal' layered='true' name='[DEPARTMENT]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' caption='Gender' datatype='string' default-type='nominal' layered='true' name='[GENDER]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' caption='Job Level' datatype='string' default-type='nominal' layered='true' name='[JOB_LEVEL]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Sum' caption='Rating' datatype='integer' default-type='quantitative' layered='true' name='[RATING]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+            <column aggregation='Count' caption='Recruiting Source' datatype='string' default-type='nominal' layered='true' name='[RECRUITING_SOURCE]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
             <column-instance column='[GENDER]' derivation='None' name='[none:GENDER:nk]' pivot='key' type='nominal' />
             <column-instance column='[JOB_LEVEL]' derivation='None' name='[none:JOB_LEVEL:nk]' pivot='key' type='nominal' />
             <column-instance column='[Calculation_951666940029685769]' derivation='Sum' name='[sum:Calculation_951666940029685769:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
+          <filter class='categorical' column='[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[Action (Department)]'>
+            <groupfilter function='level-members' level='[DEPARTMENT]' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[Action (Recruiting Source)]'>
+            <groupfilter function='level-members' level='[RECRUITING_SOURCE]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[Action (Department)]</column>
+            <column>[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[Action (Recruiting Source)]</column>
+          </slices>
           <aggregation value='true' />
         </view>
         <style />
@@ -953,8 +1127,8 @@
             </style>
           </pane>
         </panes>
-        <rows>[federated.10mvfo20tzm16f109qeqc17cjitd].[sum:Calculation_951666940029685769:qk]</rows>
-        <cols>([federated.10mvfo20tzm16f109qeqc17cjitd].[none:GENDER:nk] / [federated.10mvfo20tzm16f109qeqc17cjitd].[none:JOB_LEVEL:nk])</cols>
+        <rows>[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[sum:Calculation_951666940029685769:qk]</rows>
+        <cols>([sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[none:GENDER:nk] / [sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[none:JOB_LEVEL:nk])</cols>
       </table>
       <simple-id uuid='{DAD00A5A-A16A-42FE-8618-A4BE12F2B6E4}' />
     </worksheet>
@@ -962,31 +1136,43 @@
       <layout-options>
         <title>
           <formatted-text>
-            <run>Are new hires getting paid too much?</run>
+            <run bold='true' fontname='Benton Sans Book'>Are new hires getting paid too much?</run>
           </formatted-text>
         </title>
       </layout-options>
       <table>
         <view>
           <datasources>
-            <datasource caption='mongo_bi' name='federated.10mvfo20tzm16f109qeqc17cjitd' />
+            <datasource caption='mongo_bi' name='sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0' />
           </datasources>
-          <datasource-dependencies datasource='federated.10mvfo20tzm16f109qeqc17cjitd'>
-            <column caption='avg_salary' datatype='real' name='[Calculation_951666940021194757]' role='measure' type='quantitative'>
+          <datasource-dependencies datasource='sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0'>
+            <column aggregation='User' caption='avg_salary' datatype='real' default-type='quantitative' layered='true' name='[Calculation_951666940021194757]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default'>
               <calculation class='tableau' formula='AVG([SALARY])' />
             </column>
-            <column caption='Job Level' datatype='string' name='[JOB_LEVEL]' role='dimension' type='nominal' />
-            <column caption='New Hire' datatype='string' name='[NEW_HIRE]' role='dimension' type='nominal' />
-            <column caption='Salary' datatype='real' name='[SALARY]' role='measure' type='quantitative' />
+            <column aggregation='Count' caption='Department' datatype='string' default-type='nominal' layered='true' name='[DEPARTMENT]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' caption='Job Level' datatype='string' default-type='nominal' layered='true' name='[JOB_LEVEL]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' caption='New Hire' datatype='string' default-type='nominal' layered='true' name='[NEW_HIRE]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' caption='Recruiting Source' datatype='string' default-type='nominal' layered='true' name='[RECRUITING_SOURCE]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Sum' caption='Salary' datatype='real' default-type='quantitative' layered='true' name='[SALARY]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
             <column-instance column='[JOB_LEVEL]' derivation='None' name='[none:JOB_LEVEL:nk]' pivot='key' type='nominal' />
             <column-instance column='[NEW_HIRE]' derivation='None' name='[none:NEW_HIRE:nk]' pivot='key' type='nominal' />
             <column-instance column='[Calculation_951666940021194757]' derivation='User' name='[usr:Calculation_951666940021194757:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
+          <filter class='categorical' column='[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[Action (Department)]'>
+            <groupfilter function='level-members' level='[DEPARTMENT]' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[Action (Recruiting Source)]'>
+            <groupfilter function='level-members' level='[RECRUITING_SOURCE]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[Action (Department)]</column>
+            <column>[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[Action (Recruiting Source)]</column>
+          </slices>
           <aggregation value='true' />
         </view>
         <style>
           <style-rule element='mark'>
-            <encoding attr='size-bar' field='[federated.10mvfo20tzm16f109qeqc17cjitd].[usr:Calculation_951666940021194757:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='size-bar' field='[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[usr:Calculation_951666940021194757:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
           </style-rule>
         </style>
         <panes>
@@ -1002,8 +1188,8 @@
             </style>
           </pane>
         </panes>
-        <rows>[federated.10mvfo20tzm16f109qeqc17cjitd].[usr:Calculation_951666940021194757:qk]</rows>
-        <cols>([federated.10mvfo20tzm16f109qeqc17cjitd].[none:NEW_HIRE:nk] / [federated.10mvfo20tzm16f109qeqc17cjitd].[none:JOB_LEVEL:nk])</cols>
+        <rows>[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[usr:Calculation_951666940021194757:qk]</rows>
+        <cols>([sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[none:NEW_HIRE:nk] / [sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[none:JOB_LEVEL:nk])</cols>
       </table>
       <simple-id uuid='{6A87FF46-9475-409A-8668-DAC245FFB6D7}' />
     </worksheet>
@@ -1013,7 +1199,7 @@
       <layout-options>
         <title>
           <formatted-text>
-            <run fontalignment='1' fontcolor='#3d4251' fontname='Lato,sans-serif'>Human Resources Analytics Report</run>
+            <run bold='true' fontalignment='1' fontcolor='#3d4251' fontname='Tableau Bold'>Human Resources Analytics Report</run>
           </formatted-text>
         </title>
       </layout-options>
@@ -1031,11 +1217,11 @@
           <format attr='background-color' value='#ffffff' />
         </style-rule>
       </style>
-      <size maxheight='1250' maxwidth='1300' minheight='1250' minwidth='1300' sizing-mode='fixed' />
+      <size maxheight='1250' maxwidth='1200' minheight='1250' minwidth='1200' sizing-mode='fixed' />
       <zones>
         <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
-          <zone h='98720' id='5' param='vert' type='layout-flow' w='98770' x='615' y='640'>
-            <zone fixed-size='62' h='5600' id='7' is-fixed='true' type='title' w='98770' x='615' y='640'>
+          <zone h='98720' id='5' param='vert' type='layout-flow' w='98666' x='667' y='640'>
+            <zone fixed-size='62' h='5600' id='7' is-fixed='true' type='title' w='98666' x='667' y='640'>
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
@@ -1051,26 +1237,26 @@
             <format attr='margin' value='8' />
           </zone-style>
         </zone>
-        <zone h='27440' id='8' name='Best recruiting source' w='36923' x='5308' y='7200' />
-        <zone h='26000' id='9' name='Engagement' w='39000' x='46077' y='7440' />
+        <zone h='27440' id='8' name='Best recruiting source' w='40000' x='3333' y='7120' />
+        <zone h='26000' id='9' name='Engagement' w='41667' x='55417' y='7360' />
         <zone h='32640' id='12' name='Job level Composition' w='37077' x='5308' y='35520' />
-        <zone h='31280' id='13' name='High Performers' w='37615' x='46385' y='35440' />
-        <zone h='28720' id='14' name='Accidents' w='77538' x='6000' y='69440' />
+        <zone h='31280' id='13' name='High Performers' w='38833' x='56000' y='36240' />
+        <zone h='28720' id='14' name='Accidents' w='77500' x='16000' y='69680' />
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
           <layout-options>
             <title>
               <formatted-text>
-                <run fontalignment='1' fontcolor='#3d4251' fontname='Lato,sans-serif'>Human Resources Analytics Report</run>
+                <run bold='true' fontalignment='1' fontcolor='#3d4251' fontname='Tableau Bold'>Human Resources Analytics Report</run>
               </formatted-text>
             </title>
           </layout-options>
           <size maxheight='1550' minheight='1550' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='23' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98720' id='24' param='vert' type='layout-flow' w='98770' x='615' y='640'>
-                <zone fixed-size='62' h='5600' id='7' type='title' w='98770' x='615' y='640'>
+            <zone h='100000' id='41' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98720' id='42' param='vert' type='layout-flow' w='98666' x='667' y='640'>
+                <zone fixed-size='62' h='5600' id='7' type='title' w='98666' x='667' y='640'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1079,7 +1265,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='27440' id='8' is-fixed='true' name='Best recruiting source' w='36923' x='5308' y='7200'>
+                <zone fixed-size='280' h='27440' id='8' is-fixed='true' name='Best recruiting source' w='40000' x='3333' y='7120'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1088,16 +1274,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='26000' id='9' is-fixed='true' name='Engagement' w='39000' x='46077' y='7440'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone fixed-size='280' h='31280' id='13' is-fixed='true' name='High Performers' w='37615' x='46385' y='35440'>
+                <zone fixed-size='280' h='26000' id='9' is-fixed='true' name='Engagement' w='41667' x='55417' y='7360'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1115,7 +1292,16 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='28720' id='14' is-fixed='true' name='Accidents' w='77538' x='6000' y='69440'>
+                <zone fixed-size='280' h='31280' id='13' is-fixed='true' name='High Performers' w='38833' x='56000' y='36240'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='28720' id='14' is-fixed='true' name='Accidents' w='77500' x='16000' y='69680'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1163,7 +1349,7 @@
       <viewpoint>
         <highlight>
           <color-one-way>
-            <field>[federated.10mvfo20tzm16f109qeqc17cjitd].[none:RECRUITING_SOURCE:nk]</field>
+            <field>[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[none:RECRUITING_SOURCE:nk]</field>
           </color-one-way>
         </highlight>
       </viewpoint>
@@ -1192,15 +1378,15 @@
         </edge>
         <edge name='right'>
           <strip size='170'>
-            <card pane-specification-id='0' param='[federated.10mvfo20tzm16f109qeqc17cjitd].[:Measure Names]' type='color' />
+            <card pane-specification-id='0' param='[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[:Measure Names]' type='color' />
           </strip>
         </edge>
       </cards>
       <viewpoint>
         <highlight>
           <color-one-way>
-            <field>[federated.10mvfo20tzm16f109qeqc17cjitd].[:Measure Names]</field>
-            <field>[federated.10mvfo20tzm16f109qeqc17cjitd].[none:DEPARTMENT:nk]</field>
+            <field>[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[:Measure Names]</field>
+            <field>[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[none:DEPARTMENT:nk]</field>
           </color-one-way>
         </highlight>
       </viewpoint>
@@ -1230,7 +1416,7 @@
       <viewpoint>
         <highlight>
           <color-one-way>
-            <field>[federated.10mvfo20tzm16f109qeqc17cjitd].[none:NEW_HIRE:nk]</field>
+            <field>[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[none:NEW_HIRE:nk]</field>
           </color-one-way>
         </highlight>
       </viewpoint>
@@ -1260,7 +1446,7 @@
       <viewpoint>
         <highlight>
           <color-one-way>
-            <field>[federated.10mvfo20tzm16f109qeqc17cjitd].[none:GENDER:nk]</field>
+            <field>[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[none:GENDER:nk]</field>
           </color-one-way>
         </highlight>
       </viewpoint>
@@ -1290,9 +1476,9 @@
       <viewpoint>
         <highlight>
           <color-one-way>
-            <field>[federated.10mvfo20tzm16f109qeqc17cjitd].[none:LOCATION:nk]</field>
-            <field>[federated.10mvfo20tzm16f109qeqc17cjitd].[none:YEAR (DIM_HR):qk]</field>
-            <field>[federated.10mvfo20tzm16f109qeqc17cjitd].[usr:Calculation_951666940031647756:ok]</field>
+            <field>[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[none:LOCATION:nk]</field>
+            <field>[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[none:YEAR (DIM_HR):qk]</field>
+            <field>[sqlproxy.1n1c64c0xdz2r119by6kk1ydqrc0].[usr:Calculation_951666940031647756:ok]</field>
           </color-one-way>
         </highlight>
       </viewpoint>
@@ -1574,223 +1760,215 @@
     </thumbnail>
     <thumbnail height='192' name='Dashboard' width='192'>
       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
-      AAAgAElEQVR4nO29WWxcWXrn+btL7AuDwQjuO7VQu5RSSpmVmZVV5aXaLrvcRldXudE9HhsD
-      AwP3YF4HGD/MAPMywDz4aTDTDRi2p8p22a6uxWVltbMrXXJulUpJKYmiRIq7uJOx73H3eQiJ
-      SqVEiQxeLiLvDxAYunHPd86Ne797tv/5jlAqlSwcHA4o4m4XwMFhN5EffbAspyJwOHjIn//P
-      7OwsPp9vt8ri4LDjPOEAPp+P3t7eXSqKg8PO4/QBHA40jgM4HGgcB3A40DgOsG8wuHbtDgBq
-      Jc/tu5M2mKzy99//IX/1Nz/kb35wmUxJ3brNjWJZXH3/CouZynNPq2RXGJpYfOLY1NQMSj7J
-      3emV56atFlJIf/Inf/K/PzpQLpeJRCL1F9phF9G5fPkDzp8/SbWQ5F+uT2CU8sQ7Wrl17Ra6
-      WuTja7cYmZhnaWaCqZUSHbEA71x+l+GJBfo6Ylx5/2M+vTZEU1sHIb8HjBI//+U4f/SH3yIq
-      lfjZp9N0hgV+cvmfEbxhvFaFH//0Xcqmi+awm8uX/4np5QI9cT+3JpZp9sPNiWUejA5x/e4M
-      EbfJP7zzCzwNTej5FX5y+Rd4wk1Iao4f//S/oUt+2uK158/Uy/zkH3/O7GqJc8f7+OVHH3P1
-      6mcYnhABUeUffvouU8s52gIaH40uoxRLtLc0cvWXn/Dd7/0XegYGsCQP5cQsl9/9iIZ4CxND
-      N3j/07t09vTgdUuU0gtODbCfWJmd5M//8m/53t+9g2LC0M1hdGp/F2bH0QPtaKtTNB0+w8zQ
-      DRaWVjh58TWsxATDU4vcuL/E7/zKeX72i6trNuenxviLP/8uf/bjq/zaW+f4y+/+gENHD/Gj
-      H/yQD698QLCtF72c552fXubYpS8TUZf46OZ9bt9/gFHJcntsll9+Osw3vv5lfnj5F3z7O9+k
-      mFrlz/+/H3DsxGH++q//ng9+foXm/iNU8pm1fIevfszJL3+D6uoMZd3i/Y8+47f/9W/ywXv/
-      wtLCMm/9yteYvf0RKyWQZC83r39Gcn6claqfk6eP0RW2uDcxy+Urn/Htf/N1UotzXPnkDscH
-      2llJZtfycRxgH9HSPcAf/vff4T98+zfxiCAIFqZpoahK7ft4E15/kIaQH7csMTs9xb98cJVi
-      VcU0IRZvwu/3IwrCms3O/iP8wR/8ezqCJsWqim4JuGWZVy+c5dTF12j1Grx75ZfkyhqRkI9I
-      JES1omKaJqqqYlkQDIWRJQFBkpBFCSwdEwlZlLn06hnOv/UWDVaJn135BKhNyn742RjLY7eQ
-      RY33PhklEm3C45IJet2Mj47wwS+vo+oGlgUIIqd6IvzlP3zKG5dO8mhK1zJNJJcbWZYxLItv
-      fP1tZibHuDX8uHnoOMC+QaCjowUAyeWhrTnK+VeO8Hd/8yOkQCMNjTHCfhex5ma8LonWjjZa
-      WprRqyVcwUY8LpmOliaQZNpbog9NynR3toAg8nv/7ne5ce023/i1L3Hz1jCKKaEXMwzdn+HE
-      yRP81m98hcs//BHXpot85e1LBCsr/NOHw7Q3N9LZ0QrAl84e4bt/9QMUMcBvfu0SN2/fxRI9
-      lDKrDI/Pce7MSQCMao72I2f5vW//Dv/DH/0hxZUHazba2ltoa2+lmM0SjrUiuzy0NIU4d+kC
-      qi4QC8i0hL1MrJRpa23mTF+M7/7Vj5D9DYyNjpKrwMnj/QDIHj/CIzGcZVkkEglnIszh5cM0
-      +NHffp+uc1/lwmD7ppI6DuBwoHGaQA4HGscBHA40T4jhDMOgWCzuVlkcHHacp9Sg+Xx+t8ri
-      4LDjCM6SSIeDjNMHcDjQOA7gcKCRX3zKBozIMsLnps8d9g+WZaHr+m4XY9uwzQFE0alM9iOm
-      aW7aAVwu10vzPNjiAA4On0cURSRJ2u1ibAhb3NQ0DCqVCqq2f6tKh41jGMZa08myav83DGNL
-      9rYrrS0OMHPnQz66eZ8P3vsnMhUTTVXQdQPLMqlWKhiGwY1r16kq6lqhdE3DNC2q1SqmZWGZ
-      Zu2zaWAYOrquY5pm7cdTqyRSGa7fuEG1qpBOrqJoBpqmoSg1ya2uqQ8/W2BZKEoV7VEZHuZR
-      +zGstRuiadoT36uKgm6YdvwkB5qbVz8lr5r87ff/C4ph8tEvr/Hhx1dRFOXhfdCpKiqGofPJ
-      tRu1Y0qJVL6Cpqpoeu2htSwLRVH4bz9/f+1+ZVIpKpqx5liJRKr2naqiG2btOVLUtQf/5//8
-      /pod06zde9Mw1p4H25pA1WoFyZQwCku8P/IAU1fpaPSSNtwc7u1memKCSLyVgd5O3v/ndwjF
-      epCNCqbsQTVEqKTxN8QJSVVuzha4cDhOzoygr47SdfQUkwtp5qYnCEdiaLl5WrtMfnF1iLDL
-      4PTpUwyPTmMqOS69/RtIxTmu3Jjh5MlB0gsTSN4QZdVC0Eu89voZ3r9yl3J2lu7jZ6lml/EE
-      IwTdEguZCppS5atffgOnT18/gwMtTEzN0dMcZWp2DnewmdWZO9y7e5e85qbRrTE/M8vAhdcZ
-      G5/i9JlzCNkl7iwYJKemOHTsMGdPHGJ6ZJiFgsnccoqbH3xAxhPGX8njjYQJdxxh8f4wFaWK
-      C5VIrI3lVJ6oF1weN6myyNffPg/A6NAtsqpAsaIhmSoNLh053kshlbanBhAEkRNnXqGvxc/U
-      zAz5ioZHkug4fIyAqPNgbpX2ri76ezoA8IaiXDh3mkxqFV3TkUQRzRI5eeIYXreH0+fOE20I
-      YJkW+sO3gSDJtLd3cqi/m0fPZlffYXo6mkmvJuk8dIy2eCMA/sZ2BjqjTExOUlZMTp46iVEt
-      YlkWhm5gYdHU2smpY4dRNDh54gTlfBpNU5FlCacO2BrBlh7mb12l59XXuffLq/Qf6qKhqZlz
-      r7yCpWUpFCqEAxKmK0R3dyd+d+0xFCQ/xw63Mz+/hAlML6V5/eJpulubEEQvl15/BY8EXYPH
-      mLrxId5IMwCSL8T5c6cIeEQURUHTDbq6Hsuil9JFLl04g2yqxAIucmKQ1Ylhmto67akBGlt7
-      GJ0Ywu1q4Nz5E/jvDGHKfvRqGRORru52xKqPe+PTnDjST093LwCXXvsS98anicVjhNoj3Lw1
-      RE9nG00BD35PO/rMbfBF8PuDdLe6cce8DI9M0N7Riz8QorvFhwc/3kADo3eHmJtboueEgK4q
-      VFWdnu5uWsJubn52k6Mnz1DNLnHn7hTd/V343TU3OnXiMDdv3uTw4Fm0sVE8wUZncmTLSEQ7
-      u2hrCNDc1UksINMUrb2cmhojJJdSyLIPv0sApUJJMXF5/EQDFrkVhWDQjwBcOH2YDz68RkmH
-      gWgEGWhoasLr8uLzeDh+rJdxo4TL7arZjkZYnMnhDoTQ1CoA8VgTPa2NfPjxNaIt7Rxq81Ge
-      KWLpCr1dMXukEF6vd1eHvXS1zPDwCLKvgRPHDuG0XuzDfNg32wwej2d3RoEsk+uf3kBwefAE
-      Gzh5pOeFSfaFAzhsHy+VA9SB89Q6HGgcB3A40DgO8BwyiSVuD49irrN3gmnoaJqOZZlro1WP
-      0JUSQ3fuYThi8z2NI4V4DhPTM1ilErdHoFysEvHoqKZEIOTF7w2zPP2AqUSSV145yuqDJCoW
-      zREfmhygSaySKplMjY9QqJq0NEYw9RKz83nCIfD4gswvZ3j77dd5OVrL+xPHAZ6DJFgsFsqI
-      xVEUuQHVpWCaLg4PnuXKu+9jVl20drdiGRrp5QVa+7pZWlxGk330nD1GaeRDJsrNCKZBbmkO
-      ySsRCPSQTEwji0kWEgoGOA6wizijQLZiMTNxH7yN9Ha27HZhbGG/jwLZ4gBfFBwZuoKiCvj9
-      7uemMU0Tl8u11ewdthFd1/F4PJtKs1UHqFareL3eutNvBluaQIFAYK0GsCwLtQqIEqGQf900
-      mqah6zo+nw89fxuz/KDu/OWG84i+jrrTO6xPLpfb8Tw1TduQA1imSaVaxev1IYr1TX/a3gdY
-      nrjHvYVVDh+7QKRhY2nUB/8Zde7P687Tf/YvcPu+XXd6h5cTPb/E8GyJQ11x8oUS0aCHggoe
-      CSrlAg3RZjLZLNGQj4ohgq5gIiFZKriDqKWM/Q7gb2jAs5pmZmKC7pZzdpt3cHiKbK6AS5ZJ
-      ZnLopoUmCLh8biZHhigZEgtYhMJhAoEwEgqiLEIlgWro9jtAQ3Mnbza3cOvGfQAsyySZShOP
-      xdCUMsvJ/Fqk3+1EXfx7qpP/V93pPZ2/j6fvf7KxRA52IwXjtEctGpviuGWRxZlxKpaP3u52
-      BFEkHm8hnc4SDvmpaiahQADLMhEEAcs0uHPzhv0OoFbyDN8bozHeVTtgWZTKZeLAymoSFyYl
-      zUJ+2AmurRraWj/8WetWDSWJWRiu26ZeXUL6gk2zMER1+H+s26a7+4+RO/5D3el3g93YQN2y
-      LAqFwobObWhowNRVqjpEW7uIAor6eCunQMCPYYJLEqlWn9xu6ciJ09vQB5ie4v7YGJfaDgNg
-      WQaJpSUCgSACsJIu0tQhABKWZSHLMuoWV5+IoogsP3kpxhaHZUXhaZu6Vd2SU6Enn7K519mN
-      aB+CIBAKhXYkL5vvhkUqXaD/cD9uqfbDiZKbVy9dqn3dFKXjYcWg1b/Mc19hmSqWvrG33bMQ
-      RA+CHLSxRHuTXKnK9dFFRFHg1cEOgr71h9g3g+2vo0hjiFvTS5w8vf9vih3oiZ9TuvGtutO7
-      2v4tgXN/+cQxU8tQHfs/6rYpelrwHvpf6k5vN4lsiXevTfIr5/sxTYsfvT/Cb79xlEhw63MF
-      NjuAgFsSCAfcrCQL9LdvcBzUwV70EuqD/7fu5GJwcE85wJWbM3zrK8fxuGqP6+++dYz3Ppvm
-      d948umXbtusXGlrakS2LgH9zs4cODuuhmyZu+fHMssctoer2tKG3RcDj9rjRVW07TDscQI71
-      xPnk3jyWZdV2kLwzx6n+Zlts2+4AmeUlikqFyek5u007HFDODLQgiiLff2+Y7783TCTgYbA7
-      Zott2zvBsfZ2vMk8x4/12W3a4SWklF6l6g4TDXjqHlIVBIFLxzq4dMx+vZftNYCvIcZbb11i
-      bnzyxSc77H9Ei4/ee5el1BeGeo0Kd4bukUwmuDc2SS6XJ5FM7HjxbK8BdE2lUMgR3KgSzmFf
-      I8ke2mI+lleLtMfCa8dNpYKGRTJTJOZzs7Ayj9sVpilq1hWRul5sd4DFsbt8PHKf8xd/vXbA
-      sqhUKnh9PizToFSuEgw5cwQHBcEyyFfg+LEnX4iG6CHgFvD73KwWy3S0tKMoVQRRfObM/nZh
-      ey4ev5eQvwFJqrWu1EqO6elFGlvakcpp0oaLI8HAmsbENE22KjexLAvTNJ86tiWbbINNi6dt
-      snWtzdPl3GJwx8/9nlu95nImzYP5WVp7TtMWDawdd3kDHB08DkDXlnLYGrb2ASzLwhtsABOa
-      Hl6shYXb7cHQdVz+AKXkMlWDtSGt2g+8VQ940t6jCNF229z6w2o9bdMG57fb5uftbg0TIRjl
-      jdfeoKcjsvVCbQO21gCmoTA2Po0kS+iaDj4XHl+EWAwCwQCmadJ76Ah+WUCzREzTRJKkLQuu
-      BFF4agmevkUxnCA8bdMS7LdpbvXan2Vzq+uzP2dza/dGREuv8NEnH/GKEOHs0e2XwW8WW2sA
-      SfbSHPYyPz9LpqDUDgoCkcZGXC43Ho+Xpkanc3xw0FjIlHjt0lsc7mna7cI8E9uHQSPNbfR0
-      dxC2Qajk8LIj0xQNcev6VZaSe3MDdts7wUq5jOT1UMqXocFxgoONgSUH+M6//32kOhetbze2
-      1wDNvYf42pffIre6aLdph5cOme6erj378MM21ACaUiGRSuLaobguDg7PwrIsrNwcllJAbDqE
-      ID9bnWx7DbA4dpc794b5bGTKbtMODhvCMg3UG3+BsfAZVnEV9ep/wswvPfNc+zvBLa1kM1V+
-      41e/9LA0FqVS8eFOkAalcuX5BhwOFMVskrv3J8jmciQS9miBjPnrSPFBXCf+NfLAV3Ff/CO0
-      kZ8881zbm0CCJNPW0oQo1UyrlRxzD5YJx1tByVEolOk5cswJCOsAQLZYIe73sLiyUNMCNdW0
-      QOVyGUmS1sJurvdZFMW1Weu1z6kphO43UctlBEFAEATUagWzUkEQBEzTXDtuuwOUMikePJil
-      Z/Ac0ZAXCwtJljENDUzWJBIODgDhgJe5lRztre2oirKmBfL71w+r+SKMjnOYq7dwHfttAMzi
-      KmKwEbfP99S5tjtAONbK8eNHCftqQW89vggtLSL+gB/LilCuKHgl0Jy9SB2AcGOcE41xW22K
-      8aOYmWmUq/8JQfZiaRXcr/x3zzx318Kjfz44rqkksPT6J0pETzOC/GQcGUvLYarJum0Krgii
-      +8nZS8uoYFbrH94V3FFEV+OTNvUSprJcv005iOh5MhS7ZeqYlfqDDQuiG9FXk6jlcrlNR/De
-      anTofD5vS3Roy1DBUBHc66uP90SUJtETB4+9bwHB1YDksld2IUg+pMCAvTblAJJsr818SeFP
-      /+zTutPHo2H+4+/vpkbzaYXri7As62ndkiCDLGM9w5ZpmjXZ9VYK6bA3qVRVfvzuJ3Wn7+tq
-      4T/+/jdsLNHmEAThmTVAPpdF9vjwe58c03+kWv2iAxi6RqWq4vP7kL7QQnnkME6P1OGlQbAM
-      pibGWVh+crj00YjOF0nOTbGQyqIbT9cAj8633QGUUpbx8QnyZScsioO9pJIpOrp6aG/dWHPZ
-      GwySWZ4nX1r/WbTdAdKLc7z/wYekcw8nvCyLYqGwttXoZvebcnB4RCjkY3RknI2GxBIlFyIC
-      Lnn9x9z24LiG6OfXfv0reD21TJVKjoX5FUKxFmJBiZt3xnjt1VceLoV8etmhw9YxTfuWWe5G
-      ePT1yBeKqMXyhtflyW43DZFG3K71HcD2GmBhapR/fOc9LOmRb9U6G6ahsby8iqpWUHXnoXfY
-      HGq1jMsbYmCwf0MqAtPUSKUytdbHc14ItgfH7ejqZjZbpFxWocGLxxehrV3C5/chiDHau7qR
-      ZQlNM9eGohzspd4N4560Ubsvu7E/wLNwe/3o1UnujSZo7mznRcHRRdGFy9JJZxJki+q64dRt
-      HwZ1edz0DZ6mtenhVLYgEAo/jgeD6GyL6lAf0eYuBgls8KG1cHmCnD5zCuk5TSDbHaCxrQsj
-      nSGbzuJrtSd+414hlS3w4bV7dac/fqiLw33tNpboYJFcWWFudpnOQ/0vrAEACoU8QiCAX1p/
-      FMh2B3B7/bS3u7h14z5t+8wBZhcS/G9/+td1p/+f/+C3HQfYAp3d3cRb42QTeZrj4RecLdBz
-      5CigM35/lljTs1UBtjtAIbXMnbEZOrr67TbtcMBxe3yIgkIyqcAGpgIq+SypYplofP2IFLY7
-      QG51mYohEHHCn2yI0cl5vvfjK3WnPz3Yy7e/8aZ9BdrDzM9MkUpnCDd3buj8Yi5NSZeJxQLr
-      nmO7AwQijbA8harvnfHjvcxKMss/vnet7vS6bhwYB7AAfyiCx7WxkSlfIIiYzqFoJt51Og22
-      T4SpShVFUTB2eYJranaZodGZutMf7m3nxJFu+wrksGUikQYmZhbpP7xB9awgAALPG8m13QHy
-      +QoNDSEsY3f3Qf309jj/5//zg7rT/+G//RXHAfYYSrWEKG10e1QL3QSPx40sre8B9s8EP5ih
-      rGq4PbXxfkNXGLk7TL6sUMylGRm576wGc6iLQqlMbjXBRh+fxekZKmqVcmUHh0E7evtYzBR4
-      5HRqJU+suZN8Pk9rNEQwGETAQjeMbd0I4VmLIDaDaVpPlc3YYq1mWk9f71a1UJZlfzmBNZt7
-      SQvUNzBIb7/FxnoAAh09nYxMzhBv7ln3LJsdQCTklymvmGtT6B5fAw/mxmnp6GRldZVyVQNq
-      0Ycty9q2jRCELUosRFF4qmxbWeYHIApPb/ywVSmIINhfTmDN5l6RQjxiM+UxdB1/0I+m6cCz
-      A2PZ3geYmV4kFPSRLyo0BDyIspvB4ycAaGx4PDSq7W4XweEgYFm43d7naqNs7wO0d3Vz+Ogg
-      kaCzUbbD7uL2eckkU8+tEW2vASZG7jD/mcavff13CK0///AEf/pnP+GdKzfqzvV//eNv8dXX
-      T9ed3mF/YhrUJmSf04+xvQ8wcKiXmU9vU3pOz/uLFEoVEqlc3blWFWf5pcPTuH0+3C4PHveO
-      1QDQOXiGb7b00BANvfhkB4dtRBAFwpFG1EqFgPfZMnzb+wCS7CIWj+NyQiA67DIeX5B4rIHk
-      6voB0rb9KTV0hZHhYfIlhXw6wd3RcWxYsurg8EJKuRRjYxOoz5k52PbAWGolT6ylk3whD7pC
-      R8RLSQdn+wyH7UYtl0EUKRXWj0Sy7TWAx9dAKrFAwOch4POwlFcJOPHoHHYAXziCaMGJY4fW
-      PceWR7FUKj33+46uh6Iyt5fONi+lYgFd19em8Y/0tPD1N0/VnX9jyEuhUHgiRF5LNLglm73t
-      TRQKBeBxGD2PzJZsdjSHnypnyOfaks3jA21PlVPX1C3ZjEXDazYNw9h0cNy9g4lmPD8k/65F
-      h360E/lG0j0z8Okz+PzGB3bZhNpDsBF5wUZtPoqHZKfN7Sgn1KJ4a9rmhpm3Gh26UCgQCm19
-      FHFlZpw7kzMMnn6dzvizI0Tv6lDNi26CplTRDQNNN6hUKi8MiLS+PYtKpfLUuZqmPnFM1/Vn
-      5vEsJ82mEpSrtfSWZZHL5Z+Zv65qz1QvPsumplTI5gpPlXOjPLJp6CrJVGbd+Z9HYjnT0FlZ
-      XkZ7RuzMR9ihK9ot4l39vPH6G7Q17eCKsI2ykRubXV0ia5i45CCFxBx9x84S9K5f5PVsKsUM
-      I9OrDHTESBWq+GUTyxVAraRwyxEqSploJMj03Apnz5zYkN1svoCazhHyubBMhQdJk/ZIknBD
-      kJJq4ZIEyoUcblMmcriPwAvsAczNLxBrbmVuZopQQwNLq2ncLhfhoJuqJhIJBzENhVQqT09/
-      H1+UuT+yu7owR04TEUwVXXBRzWdoiEYpVVT0aomqpuLxhWkL+1hMJDFM8LgFVFWnUCzj8vro
-      7e7coOpy7yJKEr4X7DSzpwfrJdmLR9DJphOUVZPllfo2vFheWUUr5VhKZKiWC2QLZfL5LGCw
-      MjfL+Pgk86spvJ6NLraAQnoVHRcjd4coqxq9bY0M3RsjVaoiGhqRsJepqXEWVza+8YeASbVS
-      YXZmkqmpSXxeP7LkJlkoUSzmmH8ww9z8AosLsyjPWVQRaoyi5DPcGx1lYX6OB9PjjE8/wOPx
-      UFJNPL4AbkkAROLNzWiKQqFcxS0K+Hx+XLK0Yc39y86u9QE2gmkYIICum8iu2kYH9VTJhmEg
-      CgKZTAZvIEi5kCMciSKJgCVQrVZxe1xouonP593Qm88wjFonXlMRZReSJKNUSni8tX2oRFGk
-      Uinjkt3IbtfGbOpaLWykaSC7XGu/aTaTIRhuwDJ0RElG0zT8fv+6S/0MXaOq6rhlEcMCy9CR
-      3bV2uVKpILs9iAKIgoAlCGtrJwThsWxGlCQEav2qzQY03it9gI2wpx3AYffZ7w5wYEbkZ6fH
-      yRYV+vp60TSDcjFPKBzG1FR8oQZKxSLRaOOeWwDyMqIoypbSi6JIuVy2qTTP58A4gIlMa6OX
-      ucVlvLKMKEEmm0RXID85RlGVePX1V/HJL++ox35hJ19CB8YBmmONJPMV+rriCIBhGoCFJLow
-      2ppYXs3idppxBw5b+gBut9vpA+xTTNNEVdUXn/iSYksNsJ9/IIf9jfPadjjQ2FIDOCMn+5t6
-      YgNJkvRSPBe2OIDH43H6APsYRVE2HWxLluWXQkfkPLUOBxrHARx2hWqpjL6ZppVlsbq0QFmx
-      N5SmbQ4wdP1DpubrE6t9kdzKNPenEwAYaoV0tvCCFOuTSqygaCbVQpJMUcXUqiQz9dlLJBJr
-      n69duwpAKb1IfmsTn2tcvVbbJ8AydYZuXufDq/XHStptUtM3uTefBwpcuzpKIpF4Qp49M3SH
-      wucO5B7c4u9+9j4//6/vkKs+LcXTlQzD9xdxP2fT63qwpQ9gmRoFRSA7M0ZnVOTq1RF6jh4i
-      MT+FYkhcvHQRvZzg46ujyLLI+QsnuX37Lt5gBJ9k0dfbydVbYxztjOCO9SJaBmP3hlmZ93Lh
-      3FGyRY2ZiWFEbyNBWSeZydN79AQPRu/ga2jm1IkjqKUs12/dwzRETp3sY+T+NKHGOEuTN3FH
-      +4lYq0wX/Hzt1UESBZgZvYUguwjFezDyS5RVjWC0m6P9bVz94AqCy0VLzzGs4gpLKwkOn32N
-      dDKNpRaZWkiSStdUnvdvfsyi3MeXTnRyb2wajz/IkY5G7k4u4A82cPbkUcbvDpFTdTKpDH6X
-      yNFzl0gnlohICka4i5mRIRpbO8kklrlx7SqheBcnT5/mn//lIztuz65gGgYzUxPIZahqbqZm
-      ZhDVIkNTS5QKJQYifu7cvEU5U+Drv/o2pqkzcOw04fRtZibHSaXTSKKExyoiuAI0+i0eLKwy
-      OnybfEVDNwVcVglR9uE1VHKuIMszE3TEwjQPnGV+/A6WBSeO9fPB9XFeOdnH6NgDDg0OcqSv
-      a62ctrhTZn6MxWSJB9MzVLQKgqeR5qDB5EyCSm6ZpWwFQ6sQa+sj7hMZvXebgi4xOz2DV1a5
-      MTSGhcnEfIIGvwsQGDh6nKgbypUquWKZZKbE6RNHGb53F1mGyfEZBAsqlTKmaTE5PsrgmVfx
-      STAyPIQhykzPTNHa2cuZM6fo6uzg2MmzhN0G6XwZDZFXXj1HemmeVKHE+VMDpFNFACzRw8VL
-      X+LB5Ai5fB6XUWT0QYJ0OsP9qQUuvXqBpoaazry9rY0TZ84zPjbBxdcvoZdy3B6b4vVLFynl
-      VgHI5cucOncWWRA50R9nMVUkk81SzqeYm7xHY/8ZBgd6CDXGeOXcGRKJVZJzU5y88CU7bs+u
-      0RRvobW1FUkAQzeYnl/i0muvEW8IAjKnzp2lwfc4hObY3duITYcgu4TscWEYGjBNvCoAAA11
-      SURBVKbo4tWLF+nr6eDQkWMUigUuXbqIZFYxhdp3fpfM8dPnaIpFOXfqKJnkEolkCa9Hpliq
-      cmjwFH29fXS2RFhcXHyijLbUAPMphd/95q9TXJ5gfqVEPN6I2x+lsz2Cxx+iKehGqLrxeQVk
-      M0C0tYXy6BStA/109rRze/wT3r5whBsTSSQBJNmN1+PC9AeQZBc+j0VzSzOiIHB4YICKBv29
-      bawuGqSyWXQLOju7+Oyzq6RXUrz+5hmmH6zS3z9A3GdyZ+gOZ4+0MT80RNupAQJeN6IVQEDE
-      H/BTLZT57PYwmlXbwTGTXOLqJx/R1TfI/NhNwn4/kseFFPDjd5lcvf4ZilEb4gs3dzI89Akn
-      B7r45OOriJKHwY5GPr76KbK3FgzYH/AjAMFQEMnlxSd7SGaSTKplDr3yZR7cv4lQ7iEQCCAg
-      EPD7sEQJlw0bXu8WvkgL3e4o4bBAe7uAJQTpiEe4du0qS8sJ3nzlDB4E2tpbAfCEW3jz9Rhd
-      UR96S5gbt+8RicUJ+1012bY7REeLl9aGRq59+imx9h7cookoCERa2vBJ0NXZhewN09ERwS8a
-      KKZItCmGz/Sha1VUU6AxEnminPtGDl0ppLl7f4qqDm+8dmFTq5nG7g2RzmToOHqerliQoVtD
-      nD7rxBp9RD3DoM+SRJeySUYmZvAGI5wYPLQnVpztGwdw2D7scoC9iPPUOhxoHAdwONA4DrAN
-      VNSDsqT85efALIjZPAX+7D+/w/GzfQx0tSO5g0gSCJKLUFDixrURKtU8ff29SHjweCwkX4RI
-      0Eclv4Av1oWhpbl5c4VYS4jl+Uk6+4/R0igwPFLgUF8DFR38Xh+WUSVdUFiZn+fia6/u9oUf
-      KBwHWBeL9qiP8blVpkeG6OvvYnqphCV4+Xff+hrT46MI/gCSa4RcMki5MEX3sfNcPHuc+bkU
-      0VgnerXCyK2bDBxrYTYP+btDtLx5GsMwufKL9wg3d1Feniave3D5QjQ1hXf7og8czijQumhk
-      0hVyhQxoFXzRNrRyEVEUaGtvIZspYBg6omQiWD4qhVVMb4TWENybLXJ6sJup8TFaOzuZnJqn
-      tSlAtmIx0N3M7c+GaW5vQTFEXOjEYxHGphbpaG+hKdq42xf+FPt5FGhPOICqqrjdGw9KtZex
-      TANF0/F69scmgZqmrQUy3gz1OoBlWVSrVXw+36bT1sOeeG1vNYzGXkIQJbR9tERU1/Utb+Zd
-      T552Y5kG87MPqKpP2j4QfYBKJsl4IkuD10PA6yIcbbZdVbhTFNKrLKcLtZCGmo6MhifQiH+d
-      PbAcahiqymoqhS8QYLmsIpsVSlV9b9QA244lEnAL5PMpUvkqc3Pzu12iugk2xrBMk8TCNDOz
-      CyRWl8nmi7tdrJcAgdb2DhILM0w9mEdy+wiHAgejBnAHg3Q3hCjkS1SLORpb2ne7SHUjCCLd
-      PV0IhoYrVcAnGQRCz4+A7ACSx0NbczNt8TgDhokkiQjskSaQaZprO5JsJy5ZwhWJoisVCtvY
-      7dipsH5NkVr8TEtXKRS2p9+hKMqOdUgfsVO/H+wRBxBFcceCoe4U++V6ZFne8U6w3+/fsd9v
-      2/sAlmWRz+exTJ3FxSU0pUIynUVV1U1HHXZwsJttrwEs02A1mcLrljG0MmNTJfxukcTKPP5Q
-      jK72ZkzT3PREy17GMIx9cz2GYbwU8X3qZQeaQCa5dJKEZLGSqdIYdFOoKETCQTRNXdvUzs6Z
-      5OLl72EplRef+DmC3/wDBNmeoURRFG27HnVimNLl720qjXvwHIGvf8eW/EVRrCsw1svCtjuA
-      ILo4feYsgiDQ3G4hSdLa7pCWZcFDB7DzLaPPTmBVNjc0KGxi58QX2rLxegTLAmOTE0MPd8u0
-      JX9B2BYHWF2axx2MopTyxJtjrCYytLbEbc/nRWy/AwjCuvvM7ueq1eH5zM3Pc6hXoGJIXL9+
-      m854Azk1RlAyd7RJvCdGgRwOGiaNkQiLK0mqpoTP5yOZLRLpftx83ClxpeMADruASE//IQRR
-      wjJNRFF8uHH44+bWTrUOHAdw2BUkSX704eGf3ZFOHwwtkIPDOjgO4HCgcRzA4UDjOIDDgWZH
-      tEDZXA7LNFhaWkFTyqwmMzUtUGVzs7UODnazI1qgVDqDUcpjYHFvPEeD30VydZ5AQzNdbR5M
-      07R5GdzmZy4NwwCbymAYhm3XU48S07Is2/J3tEBbxiS9uoyrOU6qUMTr9pErVYhGwqhqdU02
-      YO8w2OZvmChJCDaVQRRF267HrGNCyM7f09ECbRFBdHH+1YsIgkDnQ73NQwnQwxPs1wLVVU7s
-      m3zZE9ezx7VAe4Vt7wM8Uno++ffxQ79/K1eH56FVS5SqGksLC5imzsLiyq6Uw5kJdth2LFNj
-      aWmFcFMrQW/tkVtcnkEriLjiMT69dpve1ghZtZnQQzHcdoRGeRaOAzhsO+mZcS5f+YiLr/8W
-      Z461gVElny+jKy6s5SWCAT/LyTxHOx+L4XZKGuE4wAHALOUpXv6rTaURw40E/9Xv2ZK/Jxzl
-      ra/+Bod7WmoHJC+nTl/gi12Lz/c3HDHcLqMnlrCqm4tOIDW3I3p2NoLCRrB0HX1uYlNpxKYW
-      2/KXvV5KMxPkmqJEw49CuAjshdFVxwHWofL+T9Fm7m8qTeg7f4zYObBNJXq5sdQM03MZoif2
-      VgwjRwrhsO1o5QIPFjLEWyIvPnmHcRzAYdvRqhqBpjCl9PYHP9ssO+YAlmU985/D/sfQFOam
-      ZlDMvXe/d6wPkFud5/7cCqFgGFXViEXDaLpFb09t2/q94AxbLoPFnnFuO/K36zoa29s53DdA
-      LL73dsDZMQewEHC7ZHQDGoN+8rkM/oZmLMvahigAdYrhxMdlqOe+P7oOO6+nXjHc5/M36ynL
-      QxumDSFWcksLjD2YprHjJJ1NgS3Zspsdc4CGWDNRBdqao2SKCq0dHZimgfBw4kOW7SzK5m+Y
-      JEkInytDPfdclGrXIUmSbddTrxju8/kb9UwqPbQhSdKWY4MGYs10tnXT1rL34qXa7gCF9Coz
-      y1mODx5GEh8/RaLkpqe7E4AW794aCnPYXkqJFdwNTch7cM8w2zvBhqGTSSxx7eZdu007vKRI
-      Hi/o2udqEouF2WlKVY2F+TkMQ2N+YamOhuvWsb0GKKZWKWoCbwwettu0w0tKpHOAX+0c4NaN
-      W8TOnwVq/ZTl6Xu4oh1cu3abvvYoOdV6+cVwDfFm3LNJjN0f1HHYI1iGysLiMoL7kUzEoFpV
-      0U2B7NICoVCQxUSOwQ5hTQxnb59wfWzNxbIsSrkSVa1MsagQDe6PrUIdtkZ6dpKf/eJDLn7p
-      tx4ekTl0dPCZ5+706LGtDmAaVaYXlgkGIoSC+2PfX4et4/JH+MY3fwtL9e52UZ7C1k6wJPvo
-      iPq5f3+EVNbZ/cUyTSzD2Nw/a2e3I9oJvAE3//B3PwLP3tvK1faGVqS5je7OdkKhveftO03l
-      4/9K9ep7m0rj/8o38Z5/e5tKtDtklxboPn4Gj7QH9M9fwPZhUF0X6DnUQzGdfeK4ZRrMzc5S
-      qZRYWk2hKMqO7gbosHuEW9pxqyW0PVi52V4DRNvaiLbFuHXjPvS1rh1PL82SKuroRgIJmEjM
-      E4q00un17sm4QPVoYEyjdh2P4gJZdYi/TPPJmD6GDXGB6pVCPLqWrUohKvkihqiTz5Vpi+5z
-      KUQpl2To3n0k95Pab7fXj5VYomC4sBCIRaMoavUJKYSpVKh++otN5Sf4AvgufLHJYIcUop7Y
-      Qk9KIVSxDhvikzKG/SCFEEUQpQCNkb23Ws52B8guLVKuVkgnNS6ef3w81NTCuRcts1MVqp9u
-      rs0sNsaf4QAOewlDKSO4fcjS3lt+YrsDhJtb8Od1vvzls3abdnhJEVxuBFNnDy4HsL8TbFkW
-      SjFLpuAMgzrUcHm9VEvlnZ/l2gC2O0C1kGNlNYGm772LddgdTE3H44FsXlk7NjM5xkoyyf27
-      w2QyGYZHx3fFP2xvAvlCEXp6u/DIe6+957AbqMzNLKObIqHw405wpLGRajZJpPco9+/c5HR/
-      GynFotH1kovhQk0tvGZjTBmHlx0XJaWAx+NH5NFoksnsg1laOzpZmRyhs7OTiZUsx+MCIi+x
-      GM7B4WkEDvX38OG92c8NToucPlcbImxurr0sOzvbgZ3vJjjtFIdtR3Z7CXgF0qnSbhflKRwH
-      cNh2vIEAy3OLNMT2XlSIHXWATCqFUimyuJKkWlUol/beG8HBfgqrS7T2djIzvbwryx6fx471
-      AbRqifHxGeLtMSTDYjKxQKixjU6fb63Xb21Bs/KFg5s242iBnjJimxYo2NZDa1XA4997i+J3
-      zAGK+TyaVkWpVlEUk3hTE9UvaoG2oFn5wsFNm3G0QE8ZsU0L5PGHOHHixJZsbBc75gCNzW28
-      0dy2U9k5OGwIpxPscKBxHMDhQOM4gMOBxnEAh11hamoKy9QYvTtMOp1meGR8V+TSjhTCYVfw
-      +/2omVUae48y9lAMl94PYjgHh42QTixBcyvJqRG6urqeKYa7MZ8lV9E2ZTcWcHO6vWHD5zsO
-      4LArHD91DoDWltrQeEdH7e/n5x//9MoEny3kNmX3q4di/N//5syGz///ATK36dn0jZfhAAAA
-      AElFTkSuQmCC
+      AAAgAElEQVR4nO2deXwd5XnvvzNz5uxHOlqOVmuzLXnFBgPGNvuWQEJImpDQJdAtTZPQtIHc
+      riltkt7etLe9SRq63LR0S8JNIEBoWJoABgzGBtvYlnftu3SOlqOzb3Nm3vuHbNkCG0tHR9Y2
+      389HH0vjd5555px55t1+7/NK8XhcYGKyTJHn2wETk/nEcuYXIcyKwGT5YTn3j97eXhwOx3z5
+      YmJyyZkSAA6Hg/r6+nlyxcTk0mP2AUyWNWYAmCxrzAAwWdaYAbDAEMLAMAwQAl03yMfgnBAC
+      XdfRdf3Sj/YJgaHrE/f0/gXpbG8nnZ161DAMhBBkElFOtvdd5FIzv08zABYYzbte5JHHXgQj
+      zUO/+xUiWYF++iEwDGPyRz/n98kvfvJ3A8PQMYyJhyAbHebeX/otHvzyw/zJX/8rmiEmbQgB
+      wjAmH5oztiZ+P3sN4/Rx4xxfJgJ06gNunGMLQAiNL33hi/zp33wPOGtjit+6gUDwg0cfZSw5
+      9f8e/dY32d8WIJOM0949OBlQ+jllztznWNdRPnrv5/ndL/0J3/r3ZxGc/czOvFB0XccQYtKO
+      5bzfgsm8Mjw4wIGDR4mns4QHW/nGD97kM3es4pkjMQrGjtEybuAf8NNYX86YXsAf/9rN/O13
+      f8x4KM5XH/4Sf/rwX1FXXYJU2shfPPgrABSvWM03/uIBHvzyXzAWGOJv/vcjxDSJB//oQZ78
+      x0cYycBd9/wi/QdeYl/LELXrr+SODQXs9VtZKfpIV17J7p98D9Uqce0dH+e/n3oStbSWB3/p
+      Br7xyGNIVjdf/aPf5M/+/JvYXU4e+P0/pLHcRaD9GJVbbiPYeoikLvhfD/0+kq+ankCSRx6+
+      j6/+7X8wHgzx0J/+CQADpw7yj7tOcv+NtTz9djfH9h1nX/c/8eDn72HX7sOsL5f56398gtWb
+      r6bRHefF/R1svGo7D9z3YQCaLr+Gh3/zVn7/r77PSN96vv43j6LLNh7+oy/wx3/yP6kuL0Lx
+      NfHpWxv55nefMmuAhUhwdJgTpzpIafp5/lfm05/5LVZWunjgi5/DSEbQJQv1dXUU2bP0BMJ4
+      fNX80Zc/Syw0ctZmfzv33f87bL/zFwi0HyFhKaC+3M3ed05SWuolndZxWNIcaI3yne98g5H2
+      wyTeff1sijt/+bO4ol1s+9An+NZXf4f9e/ZSXFWPW0Q53hnE63GgS1ZssgAEb731DmODvUTC
+      YxxuDSDJNr745d+jUEqSNCTqa1dQVeKgo9cPQHXTZrKBVn7+ZjMf+sjd3HjNRj7/pd+hzucC
+      4NWXdvEbv/cQf/C5T1Ho9WJkM1PmrloPv8V9n3uYe3/lXpr378NeVEmpw+DgiR7cxZV8/S//
+      mFhXKy+/8ga/+rsPmQGwEFm76Qru/+WPUeK2oag2/F0neeL5Ny5Y/kTzQQbGomTOGzATlNQ0
+      8rd/+WUOvvk6Ll81ZJIUV6ygsdJDWnLRUOHhZE+IcleKRx75FwxnGYVuJ81vvcnOvUcnjFjc
+      bF5fR+O6dbzxs+f5+39/moaV9cSiURrWrMUhkpRU12PPRhkYjSIEvHWonU9+4oPc/YHreGvf
+      oSk+dbecoH0wSCajTR6TFJWbr1nD2x1xNtQW4S108fQTTzMcTgFw2aa1PP697/P/ntnJeDTB
+      5g1NHDt+cvL8NVds52sPfZqdO3dRXVtHKhGjun4V1WWFxIJ+/uGRf0UqreSKjU08+f0fQDwe
+      F/F4XMRiMdHV1SVM5pdYKCgGAkEhDF10tHcLTTdEd2eX8AcCoj8wJob6+0U0mRE93d0ik9FE
+      e1ef0LS0aG3rEoMD/SIcjYv2rj6RzaRFZ8+AEEIIXUuL9s4+YQghBnp7xGgoLsaG/eL4qXaR
+      ymTFaGBInGjpFJpuCC2VEMdPtIpEWhOGromWlnbhHxoSY6G46Oqc8EcIIUYDQ6Klo08YhiEG
+      entES3uv0A1D9HZ1iY6eISGEEIahi7b2biGEEFoqLjp6hkRPZ7fI6Ibo6OgWWT0rWls7hH9o
+      SIyGYqK3u0sk4jHx1A/+Uzz69OtCCCGymZQ4caJVxOIx0dUzJIRhiP6eHtEzMCwS0bA4frxF
+      RBNpIYQQmWRMdPb5hTAM0dneLqLJjPAP9IuTrd1Ci4+Lz33pq+L4qTYRT2lCnPZVOqMGFUIw
+      MjJizgSbzCtaLMgzOw/y4TtvxmlV8mc4m+bnu97h9lt3TGn2mAFgsqwx+wAmy5opw6C6rhOL
+      xebLFxOTS8571KCRSGS+fDExueRI5pJIk+WM2QcwWdaYAWCyrJm2Fshms82lHybziK7rZLPZ
+      ixdcgkw7ABQlj5MSJguKi0uVLy2KolyyF+60m0DdbSfZvftNWjv7uFCvWdMys9Cv65w61Yae
+      zaIbBgPdHURT2sVPMzGZBcpXvvKVr06n4BP/8V1KV1/Gc4/9C+u238pw10mCCR23FQ68cwiH
+      28X/+fM/RJQ20lBVwkBvJ/7AKFa7kxNHD2N1FyFnExw8fAxvcRFdnZ2EwxHGw1EcSpZAKE5f
+      Ty8HXnqC3W0hiu0SilXF7w/Q0zeAz1fKyaOHCMcSoNhx2Cy0nTzCaFSjuMDJ0eZD6BYHifFh
+      sLnp6+5AS8YY9A8jWx20HT+MsLpRRZqDh49RUlaORTG7QMBZzfwCQU9H2HekB4ce5VhvGG18
+      kN6BACNxg/Jiz5SyiUiQkWgGj9NOPOinuWOE6rKi99gMDvXQMhinorQAMNj1xj7q61ZMvwkk
+      DI39e98klFEJtu7lnx57AUVLcOXlaxhNO7EVFGGz2XC7JmSrrz3/BJnSzdhee5bOkCD1s92U
+      WWJcvv16Dh06zA8f+wFf+MLnef7lPdx7UyOvdev0Nr/D5bV2nG43Jw/uoywyys63uyhnlIG+
+      FgajVvqbn+CLf/o1UuN9/MOjj3H7HR+i552XGbOv4NQzf8faFT623P2r/OTxH7GhvpTOVAkN
+      jl0kPCvpG36H43v/G7WghH0nB/idX/3o7L4pkzlBUR28/dbbJGs8NI9ZqFFj1K1cwetvHuVo
+      WRF3fWA7L7/4Go7SFWgDzezqSPNn/+O3sAiBIQx2v7KT/pDO3XfdikOVeGPnTlpa2/HUbaav
+      7RjuYh8YBm/s2j39JpCs2Lnnl+9jU52HU52DVDWs4e6PfpQdN9zKqjIbL766l5ISL77SkjN3
+      wfU33ICeSbNpyzV88NbrSGoGq1avxu2wUd2wjg2ra0km4gz5A6evIuHzlVJc4kORJo6sWrOB
+      umofDk8xHccOsu6aG/G57VjdpXz8rtt5/eWfMTQWoaauHpcqowud4EiAUCQJwPYbbkbWNarr
+      Gigv9ZLSBNuuv4UdW9bm8zszySOyxUqRVac9IlOuJgnqKiUOmdLqOoxQH72BMMgWfv6znazd
+      sIat27dT6FRJhkc4erKLvfuPYlUVJEkiERzkQHuIa7esgWyGN985xdYt63h7fzORQO/0A2Db
+      Ddez+2c/pWrTzdz9Cx/nmlVFZC1O7BaJWMrgF+66g9s/9FFajzcDsOWaGyl1W/nE/Z9FC/ZT
+      VFLOb/7G/ex+Yy+VNXXccuO1YHVzy9VrCOHlqg2N3Hb7TWzYdjPp4S7Wb72W1avXsfWyVWy4
+      cgeZ4DBlFeW0vLOHvvE4hhAkYlFuufNu7r3/1wm2H+bWj/0yd37kI/S3HOXWD36Q9Vdsp6bU
+      xQfuuY9g2wFshaV87gufp7uzi4rKijn7Ak1mi8TGxgpiWSs1RRYkTzkAhYUFqKqFI/veYiQJ
+      DtWCxWqlu6ODlDbRhBOSxJYrLqPz6Du0DoSw2BzExoZoPtWFQOAtLsZlVwHYvuOq6c8EO53O
+      ObrZ6TEe6GPnrj24S6u57aZrscjSvPqzlNA0DU1bOAMOiqIgiyyRFLhUg5RhwS5nSRoKIp3A
+      5nDgDwRxOmz4yorp7emnpq4OKZtkPKGjZJNE0oK66nIkCcZGAmR0UK12NC1LZXkxQ/5RKsuL
+      F08AmMwdCzEAFtwwqInJUsQMAJNlzbJPi3Ks+QBJw85Vl29EOk+3IjQ+jiHApoDqKcJ6ziuj
+      t6OFUFpm0/rGS+ewSV5Z9n2AF3/2LGndhpIZQy0oBxQUWeC0u/AWFRBLpuhqPcaq6kbidgNX
+      YpSxpIqvugEHCUJpiWx8DNVpp9BZwmBrJ+5VK4iMhEALE8o6+cSHb5nv23xfzD7AMqamYTUr
+      Kkoprahh9co6rBYFr6+C+soiegcC2Gw21jY1YbHacLkLaaitJJ2IEk9kcDidpFMprFYrNrsL
+      /1AfNk8Bq1c2YLXIFBaXsWHtqvm+RZP3Ydo1gNVqnWtfFgmCns5OqupWoipLYyjWMIwFpQa9
+      lDXAjFeEGXqK5555geLqOnZsu/J9q5B4PI7rtDTCZOGSSqWw2+3z7cYk+QgATdNQVfWi5abd
+      CT7bB3CycfMmJF2gOp28n5u6rk+el+r4W0Q68D6l3x9741eQVG/O55tcmFQqNd8u5J1UKpXf
+      ADgXlyXL/u5R1l8x/XMyA49hxFpyuRwAtoYvmQFgkleS0fHcOsGB0RBKLEjn4MjFC5uYLFAM
+      I8f06NtuuIVMMkj/0EQyVj2bIRRNUFLkJRYeI5G1UFZSmFdnz0fy1FfQRl7O+Xznhm9hKd4x
+      5ZjQUwgjmbNNSfEgyct+emVRYLU5ZzERJgyy+kQAGIYgkZwIgLFwDGEIjCLP1NGFWSZf0Q0d
+      410jFXqiByN6NHebmRC8y2am89tk2r+es03HNTtRCq/O+XyT/DCddc6SxZpbABzd/zpHTgX5
+      5H0fAyCbSTHY34/bXYDQ0iR1BVmWkWUZi+X0JWY5YqjICrJlqruSNLtpDFlWzvp3mqw8O5vK
+      eWyaXHp0XSeTyVy0XE7flKekkvLS9OTfDnch12zdCkBRQVMuJpc0Qk8g9NxHWiTFiaQsnGHK
+      xYDVan2PeiF7eksniyIjnda9zDgADD3Fvj37KKqsNaeRp0mq9euku76T8/mOjX+PrfY3phzL
+      hvaTGfhRzjYtxddirfx4zucvJoQQ7DnWR99wBEWWsFkt3HlNI6pFnnkAyIqddesbGQxEWTjL
+      qJcfRqyVTM8/zcKCWDYB0NYfxBCCX7x1IwC9gTCvHuriA1evyu0l7nE7QLViZgoyWQy09o1x
+      +eqzS2BrywsZO71mPKcAsDs9pMLjLBz9oInJhSny2BkJJSb/TqWzkylxcuoEjwUGiWZSDA+O
+      UFvly4+XJiZzxNZ11fz4tROMRRI4bCqH2/zcsXU1kGMNkDUkSgq8VJgPv8kiQLUo3HvLBgpd
+      dgxDcM9N6yn1TowQ5VQDbLrqGlZHR+jrHGbVyrK8OmtiMhWDgwcO0tC4hqLCqVnh0qkkQlLA
+      0FFtNiQxMd+qnCfjnyLLNNWUvOd4jjM2ErLM5Bb1JiZzSSw4zDvNBrfdsHXK8Y62Fop9lYyP
+      jyBZVIyUoLZxFS5ZQggxrXSPOTWBjh7cz9NP7qR29UTCIiEMEsmJXrWWSZNILj15rcl8IVG5
+      ogaZd28CLnC7XAQCAaw2Gxg6GS2LxMS4/3R/cqoBvAUOVl62mTNq65GhAcZDYapXb2Cosx2n
+      txyH3TY1CmdZWZw3onNPRX1Bm2JObM7K5Jz4yTTfkPOPoPVoKxUb17/ruERRSSmlVS60VByn
+      24MM6IJJGc50UvrnVAOMjAxxfP/RyWFQIcBmU8lks7jdbgIB/+njZyNttgjOE8FzYHMu/Jw9
+      57v3WQYq5NG/uSOVTFJQ7CSdfm+wegqLcNqtFHqLUC0WFIsFqzqzd/qMa4BoMEBcs7JyTe3k
+      RFhZZRWhSAyXReAoKsbl9SFJ0tQonKUYTpZk5HdFtHS+PCYztPnut8Tc2JyVSaTz2NRnKQSU
+      JGlRbHqSSaUQsoI+R2uWZxwAnuJyCh0nOXLSPymFkGSFIu9p/b/ViiOPDposbwqKvMRHRtFl
+      95zYz6kP4KtqwDsUM8VwJnNOX2c7RQ2N1DXMTXqZnJ7hwZ5OxsejLJxEGiZLFYuqYmTTdHb3
+      zY39XE66cseNbLwizPhQiMpKc6G6ydzhq6ylsmblnNnPqQaQJBlJaITOERiZmMwFc726LqcA
+      aDl2mNde34+umI0gk8VNbmK4TBoUBzZ1aaQGNFm+5BQAXm8hgcAodQ01AIRG/BxpPkJKF/R2
+      tXOqrSuvTpqYXAgjm+H40cN09vbQ19VHJJG++EnnkFMDKx6PUdvQMDkRFk9r1FZ4SWQEWKw4
+      lYU9u2iydDA0jaKycqLjYwSCGSpqq9F1HU3TSCQSkxObQogpv8uynLsWKJFO0dvSj37d1ShA
+      ua+E3sFRyj0pFJedhG6mBTG5NFjsDvThYSpW1FNbI5NOZ3A77aiqOq09LXLcIEOQzeoX7aFH
+      o1E8ngkNd2boJwgtNJ1LnRdr1aeQLFMzTWujr2Ekcm9uqb7bkR0rphzLRprRQwdzt1n+YWTb
+      1DUS2dB+9MixnG1aineguNdMOabH28mOvZGzTcWzDkvRNgCCweCSyw597rP3fszpDjHTdcJk
+      5vQPjdJ8Mvfgr1tRxsamOmBpBsDIyMh57+ncphCYe4QtWg4d7+Thbz6W8/n33nX9ZAAsRex2
+      +3lfvu8OAFPOY7Js0NIJBgaHSKbOpkw0A8Bk2SAMAy2TITByNq1/TgHQvO81nn3mFWY24mpi
+      Mr9o6QTheApf6dlsJjkFgK+iGpfXObkkMhEZ5/iJFrICspkE7V09+fDXxCSvWFQ7WjxELHn2
+      1Z1TctzXX3sbr6+SLGAFgpE49eUuQkmDUF83cW1i58GFtvvgUmK263mFWH7fja7rOF2uKctA
+      c0qOu7Lex4n28cljxQVOugZGqK1LUVZeyWgo8t79AUzyijzLfQwkaZl9N4ZOOBpHkiRs1rOb
+      5+X0CZRU1rNODU9KIZwFxWwoKD79h5MCb9Fs3TUxyS+ygsMqcaS/H1thOUWeiYW7OQWAnoyS
+      ldRZZ2UwMbmUuL2lXL55E27v2UVcOQVA06arqE+O0tUeoPF0cqylwo+efYP/fOqVnM//1sO/
+      ydpVKy5e0OSSEw8H6erqoaLehqtyIk1iTgEwkahJIM8238cCJBZPMjQczPn8jLa8OpaLicLS
+      Cq4pqaCruxuYRQAc2rcHTXJy5dYZ7JS9jAlH48TiuaeL9Ba4cDkXjlZn8SIhSSCdM4CQ2yZ5
+      LjvHuka5Mm+OLW0effwlvv/0qzmf//AX7+UTd+64eEGT9yU80k9X/zCBaIaGugkdVE5jaeOh
+      GDb096QrNTFZyNgdbmSLjcvWrp48NuMaQM+mkCWJaEaf9z3CvvGPP2bX27nr7L/+0KfZurkx
+      jx6ZLGQsNjt2VcJuPyvtn3EASJLM2HiUiqIC9NMGhKETiSUoLPCQSSVJ6+BxzX2CxFAkjn8k
+      90U26Yy5y9lyQkunGA+FKSg723bJoQ9gUFBQiOounDx5eGiQeDyOZF+DSCYYGhlnTeOqSTnE
+      XDH7VObv9W/WNs93z3OQct2YdVbnxZIePX8YQuDxeJCYhRRCklW8RQV4yyonEz5LEujCIKtp
+      RIOjeApLTx+f62HS2do/z/mzNnlphoaX3gD03OP0FLF+w1SVQg5NIAX0DKeOnaS4/HpsTKhD
+      nYVJbFYJe0UVmiEhSdJkivS5YvZpx9/rnzTLR+u89zxLR8/r56wDbW6/m8VCTmrQEyc7KKmu
+      mzxZkmXcrokF66qqXvhkE5MFRg59ABmX2wVahixMeyRocDhIVst94LSqohjLItjQwWRxkUMf
+      wILLDgNj0RkNgz7w8P+lqy8w08tN8vPvfY3yUjMTtUl+mXEjUJJkalc3UeiwmGpQk0VPTlKI
+      uoYm6hqa8u2LicklxxwGMFnW5CUAxocHaW5uJqkLejpbOdnakQ+zJiZzTl4WhSYzOivKvCQz
+      AsliN7NDmywa8lIDlJf5iGoW7CJFkceJ3V2YD7MmJnPOtJLjnk+LMh0ymQxWqxWA3ftPEEtc
+      eFHIu3M2vpubtm3EbrNOKXf4RBf+kfELnnMxm1duXIWvpHBS/yNJEh29ftq6BnO2ue2KNXgL
+      XFPKnerop7t/OGebG5pqqaksneLngH+Moy0Xzr90MZu1VT7WN9ZMll1IGSKWTHZoXdfzvhv5
+      XNg0DGNSupEv5sJPIcTk5g75JJ1Oo+sLZ3XHpQyAOR0Fms4DMDocIJlMkMpoBAIjFy1/IZuZ
+      VIzxcGzKMSOTIBJLohtnYzwRf+/OlrIsn+fh12g5cYrI6VorFY8wEgyf99rRaHSafgr8A72M
+      hd5bfjqcqwkKjvgZ8F/484on4gDEQqN0dPWRTmcuWHY5a4Lmvd5LxMIMj45Q5C1leGycEl8p
+      Fnnmb+KxsXGSWUE06CcrW8lEw7idKlHhxqVkGBqLUVHsJKHJrGuazr6zabSswuhQL80Dfmwu
+      Dz6vh/7+bjw2FYvVgdWq0t4zRG1V2bTeNkZWI4OFUofMnt27qaqtIxoO4XB7IJPAYnPhcbuJ
+      hEZIS07Wrqq9oK1oJIJs93Bw316Ky1cwODDAipoqMARpXSIdH6OgpAqrFseQrQSDQWKhIIrd
+      SjyWpMBbSl1N5Qw+4aXJvIe+w1OEKumEIxEkkSEcy23xeCQSIhKOEIsnMAyNZDKNgYQiCVLp
+      NHa7jXQ6jXXaYj0ZiwJ21YpsteMrq6DAZcVitVNQ7MPpcmNTgGwWeZo2JUUhFQ3h9/tBEqQM
+      CxUVFRS6HSQTKQxDp6+nG03IhEIX7tsA2B12YrEwWSGRzSQwhEFWslLkcSCAsooVOFQZm9ND
+      Q90KhGHgLSnF4y6koqICp33e330LgjntA8wHyWQSh8NGMqnhcMyuHXnpECSTaRyO+cn8oGka
+      mrZwVsddyj7AknoNJGIRDNkKyDgctimjUAsbad4e/oVIrqOO72Y6NpZQAOgMDE4MNbqcKpLV
+      TSY2jGwtIhmPUlZeQjShsaKq3FxNtcAxDINUKvc8SjBRi0zHxrz3AfKJkc2QNQwMSYVsBgyN
+      8WAEr9vNqbZT9PQNmgpWkyksqT6AlkkjJAWLMhHXQhgIISHLEoahk9F0HA67WQO8i4XWB7iU
+      TDsAzKWOSxfDMBbURNilZNp9gOX6hjBZ2iypPoCJyUyZ9SjQ3Of+MZkrZpsEbCkw6wBwOOY+
+      BaJJ/snHUONSwGwCmSxrZh8AwuCxR/+egWAyD+5A/6kD7DnSCcDYQDuHT/XmbGvc30Nrj5+g
+      v4fWngAth/cyEHyvGvSipMZ5Zc8hAISI8eSPXwAgNjrA8Y7+nP07FyOT4MmfPDfxu57hqcf+
+      nW9/+zt0B3JP/rvYUVUVh8Mxpz+zbgIlw0O0dnSjv/42t60v4MmX93HdDTdx8sBuDIePX/rk
+      R0mOdPAfT7+CyKT41Kc/za4XniEpe6gpsbFy3QYOHumixJbm6pvvIBr08/yrr7P/dTcfufVq
+      IlGZf/6Hn1KxeiMFxjinese46+4P8+Kzz+D01fOpj91JOjLMD594hqyAbddezzt738BT3oDh
+      P8zuNo1NtXC0T+Ljt2+kxNbDTx5/HSOd5GP3/iKvPP8saUNw3S0fYsPqcv7pW3+HLlu46a5P
+      0X/0dVp6hvnUPR9ldDzMmy/+Fyf6BugdMrgHeP3nT/PswQAP/vZ9vPTii5Q3bOC6DZU8+ezL
+      1K69grtvv45ARzM/+u+9ZDNpykrcOHwrcaUj3HjXB3nh2RdZX1fMK3sPs+26G9mz62VGBjrY
+      8cFPcP3tH+atl35Cz9AY9eXLNx/SXPcxZ10DHHh9J1JBJfvefJXoeABnRRO28TYOtgfobTvC
+      SDSNFg+TtfloqnCw6+UX2H2kC39XC+lUgsef+CkHjxzmeOcATnXCnQ1bduCVInT19tA/NEyP
+      P8wHtq/jRz99CSMd5uDh4wSGg5MLRIa6TqB7qgkFx/Gf3EvXSIJjRw/RtG4jO265jeuu3sK1
+      t95Gwt/D6NgYCcnDllVF7N2zlzAeQmNBVtZXATr+UJrP3Hc3zz7/MopqJR0a4PjJTk519PHy
+      nsP82n2f5Iy6aNOmTVx1/e3sf+lpbv/kZ+g7+AY/eOIpPnr/Zznx5k6SQDw0jGfFOgrEONfd
+      cQ+nmt+hq62NrJGlpa2Nn7zwKp/5rc9QW+al0FfNh2+8ggPNbVhSI0hVV3LD5ulIt5cmWmyM
+      g8c7QOi8ve8AnSea8Y/HJ/8/NjbIsba+c87Qefm5Z/jh409wqmvgvDb9Pa28uuedyb9nFwDC
+      4FDHGA989tfY2lBAuz+Ky+2hsqGRQoeFlU2XUeKeeFxUq4osSZRUr8RX4KBm9Rq233AD7W2d
+      XNPgxl62anKGVrVakc9ZE2B3OrG5CmmqrcJTVEbTqlqqqqs4dvgASc2gwFvE7heexF5SQ33j
+      WuwWiY0bN1NUVMjhfXuQbS4OvrWHVNaYtC/JEs4CL4defwHJVYo4vWgmONTDDx//L1bWlfDC
+      i3uwWm0YxsQkUbFD8MMfP0eaCTsOdwEn9r/BisYN/PTx/yCmFrJ1UxNP/eA/MTw+bFPuR56Q
+      YksSTnuWxx97gnDCoHFFMf/5ve9zuKUHi2rFoigIBLFYHIfdvqxH2dKhQXbtOwpGlhdf2omu
+      Z9H1LLteeoGXdr7Cwf17+elzP+OZZ39GOmsAWd7cd5Rbrt/G9//1UcZGBnjqqacJjEfYs3sX
+      r732Gn//7W/iDyVoO/YOzzz739OfCb4Qsqxgt9vIahl0QyDJClZVIZ1KISQFu82KoWfRdIGM
+      gaSo6FoaAxmHzUoqncaiyAhJQbUo6FkNXUhgZJFkBQEYuo7dbierZUhnsjidDlLJBJKiYrdZ
+      efvFp3mzdYRU0M+nH/h9fA6BbLFiVRXi8SROp4NEIolVtSArClndwCLDyf07ee6tTpTkKHfd
+      /7usr3Hw9a9/m4ce+iJOl5N0MoEkKyiKgm4IVEUirenIEtjtdoQQJOJxHC4XqUQc1ebAosgk
+      EnFsdgcW5ez9CD2LarWRyUzcbyarI5/etTyeSOF0OshkNKyqgqYLLDJkDQmbdWr1vsAAAAvi
+      SURBVG70iothFCgdOMUDX/sum9fW0TWS5O4ra1B8NbT7sxgDh7ju1ht4/q0+6uQAl3/k17ms
+      1s2XP/97rNywHkdpPcPHXsXuqyGlFBHqPMxvf/krvPLUv7Htzk/w5BPP8Au3bJ59H8Bun3jP
+      WVTrFGM2+9nhUVmxTCweOY1FOft/dvtUGbBiUU/nHD3H2mkZhkW1YlEnahSH0zX531tv+xgb
+      dySQLSp2u22K1sftdk35F+DM+u+N2z/Iys0JJNmC4/R9/MEffGnSp3OvcUYI4rSclYRIkoTL
+      7Z447nJPHned8/vk/aiWKfd7jplJ3858lmc+KzMVMFx94508eP+d/MVffRsAl7eMo098lw3b
+      bsbntFBRWU1hIja57NVb2cDnH/gisiTxyF8fYuOV11DoLeK58SEaqstQVRW7w4nIphkeGZt9
+      DbAYRHIm72Ux1ABSNslgKMOqmnJa2jrwOlV62k7w0oF2jPAAt3z8V1lR4cOqx3CWVFHoVGlp
+      6WDNmol931KxEAePnGTD5svx9/exZk0TfV3tlFTVEw8O0DUYMgNgubIYAkBV1feIMLPpBIcO
+      HUZxFbF5w1qUHNaPn4sZALMgkUgs2vtfrAGQb5bQirBcifJv//wC6y5vYFVNFYrVjUUBFBWP
+      W+Gd/SdJpiI0rKzHItmwWkFxFOJ1O+gKRNnQ4ETXxjh8aJiScg/+/g5qVq6jrEji+KkYq+oL
+      SOrgsjkw9DTj0RT+/n62brt6vm/cBDMAAEFlsYO2vmG6Th6hoaGGLn8cIdn5pXtuoavtFJLT
+      haKeJDzqJh7tpG7dlWy9fD3lljBQRjaV5ETzIVauLac/ApHjR/Bdexm6bvDaqy9TUFZL3N9F
+      VLeh2j2UlBTM902bnMZsAqExHkwSjo6DlsRRXImWiCHJUFVVQSgYRTeyyLKBhINEdBhh91Lh
+      gRO9MTatraWzrZWK6hV0dPVTXuwkkoKVtT6aDx2nrKKMtKGgksVXWkhr5xDVVeWUFBdd3LU5
+      xGwCTTDvAbB4MjdMRRg6AnnKhN1iIpVKLfh9gi9FAMy7GjSdTs+3Czkhycqiffhh8X7u+WbJ
+      9gEOHthPqc+Ht6gIAwveAtfFT1oA9PZ0YyBTVODCYnMSCUeoqDRTucyU6SYnXrIBUF5eSm+f
+      n3hKQ5ElvAWr59ulaVHqdRFMypw6foLC0lIS8RTFZeVTZtJNLk4ikVh+meHOpcRXictdiIRB
+      RiyejBZ2dxFlTrCxEsnqIB6No857Q3XpMu8BoGnaedOL5wPltODGzvlTmC9k7K6JoVJbsZd4
+      LP++m+uBJ5j3AFBVdVpVlUl+CYfPv9fBcmNOA0AYOrF4EpsqMR5L47JKCIsDm0XBMPT3KEFN
+      TPJFOp2e1lqKOQ2ATDpNMBym1FtAeDxI0iJjMEp4NExt0zqsVmNZZyUzmTtUVZ3WHNUc1wBZ
+      hgN+MrEQhsVNJh0D1YrH4yGVSiEVOKds+zMbYs//AJGe3sJ8pciH8+aPzfqa+UBk0sSe+960
+      y6u1jdivumnuHFoiyLI8redqTgPA6nCxedMmZElCCIEiy3B6M7ozuxjma3O6bG8bIhm/eEFA
+      JBMLZqmhMHSy3S3TLi873AvG96XAnAaALCtY5fMPYJtfoslCwBxhNlnWzPswqIlJrnS1t+Ao
+      KCY8FsBVUMT4WJD6xjV4HNMXV5oBYLJokSSJeDiMp6SCyFAXFSuaiMXjOK0Kuq6TzWYvasMM
+      AJNFipiQS1tdpCNBfLWNjPiHqF/diKJMpLKxWC7+eJsBYLJIkaiubTj9exkAJUUzTyFpdoJN
+      ljVmAJgsa8wAMFnWzGkfIJWI0js0ikPRGYtpOBUdodqwIWMtKKKqrHguL29iclHmNADsTg8e
+      VwwtncHrskzUN4bGqH+EBl8luq5Pe7gqv4h5uOb5ETMUAgqxcHxfCsxpACSiISKRGFWV5STS
+      Og5FR6hOKqvq0PXsjIar8os0D9c8P8Y01q2eiyQtHN+XAnP6STo9XtZ4Joam3rvmZfGlQjFZ
+      epidYJNljRkAJssaszG5yMm0H0MfGZx2eftVNyGpS6P5qaWiDIfSaPEgBSXlE1KIVU3YZpBG
+      wwyARU6m/SiZ4wemXd62efuiDAAhDIaG/BQUenG7nIDAPzyCljSwFxUz3NNKyYomguEwZUUF
+      phhuJmQHe4j88DvTLu/YcQeO7bfPoUcm70ZLjPPMkz9hy46b2XbVehAGelYjljHIjPpxFVcy
+      NNBL/eomUww395g5dS41ssXODbfcypq1E9sfISnUr1wzpUxNzYqZ282HcyYmc42kKGRTMUaC
+      kbzaNQPAZNEgjAwdnX0XLzgDLkkTaKi/h/G4hstiYKh2XFYbQlEp95laIJPpYegag30D1Gze
+      nle7lyQANE0jk07jcRUgiywdLS1s2Lp9wWiBdGNmehzDyJ8eZ7ZaoDM73E8XXTcwFqGWSOg6
+      KcmGJZPfXW0uSQC43S7SQkWVBNg8bNyyBS0VR3F4F4YW6AKpWy6ELOdPjzNbLZA0w006FEVG
+      XoRaIiGyBPr6qK5blVe7ef0khGFMJr46l2JfJcW+fF7JZLmh2gvZsmU9xaX5bTbntRM82N3K
+      j598moHh8XyaNTEhm4pw8NAJxkfz+2zltQbwD49x5113gabl06yJCYrVSVNTA2UV+W1K5LUG
+      KC5009x8HEeBO59mTUzQMwk0Q8VuzW//Ja8BMDTYy7GDJzCTnZvkG0lWUBTIZs88XYLhoX7G
+      I3GG/YOkMhoD/QMYM9z5Jm8BEBn1E07LWGzm7JpJ/lEdXj7wwdsZG+yfPCYBw0P9JLOCzpPN
+      GMgExiJThtcv9pO3+qSgtIL1jfXYnCVmAJjkHSEMBvoHkJQzj6wglUqT0bJkxkaw292MDAeo
+      m08xXCqTIRgYxgCW066eqSN7MSLTG52QFNVUkuaAlgjx7DPPsmXHTaePyNQ0rKJmlnbzPA8g
+      I4zMstNKZo4fIDvYPa2yktVuBkAOSIrKh+6+G1nObyc4r9aaNlzGippy/H1BamvOTliMDPUT
+      z8qQiWKoDlyqFWGxUmFqgUymiSQrtBw/THXjprzazWsASJKEIkM6M1VrEg6HSWUVPF4XqqHR
+      2dbDhqu3TdUCCQNm0oOfoXxhKvnVAs1kz10BU881tUDTQs/ESaQlCj2uvNrNawA0799L/2CA
+      mrWXTzleUVmJPxjHLoOwF3LZFeVoqQSKo3CysxL7+eNkju2b9rW8v/3nyO6CHD3NrxZoJts9
+      STDlXFMLND0sNjdet5VMnidZ8/pJFJcUE8lI+LxTJ8LchcWsLjSbOya5o2czpNJpIpHpbYQ4
+      XfI6YilLMNjvx5fn6WoTE0kCWbFS5M211j8/eQ2AaCRMdV29OQ9gkneErqMLUNUFLIWIRCO0
+      HT9lSiFM8o8sYVFkDMPIq9m8htM119/GFddoZtZPk7wjyxa0TDrvc0x5Hg6QsFrNx98k/whh
+      YLVaCIUi1FSUADDY141hcaDFQnhKyhgN+Klf1YTdOv2RtcU3HmayDDEY6h8klc7i9pwdYSws
+      9BKJRJELSxjta6dkRRPjkciMMsOZ/VWTRYBEOhXDYnNgmZz3EPT19WIoKrGxAJ7SavyDfbhd
+      riliuIv+zOt9mZhMC4m6las4euqNcyYdJdZuOC2LqKwAoLq6asaWL0kACCNLV88ADhWE6sBl
+      s6MLg+Ic9nU1WZ5IsgWrzUY8EoHTfYB8cEmaQP7BARLJNDoKeibOiebDqA73FC3QTPQ0MKHf
+      OXdhw8wQU87NVQt05icXLdDktXPUAk1eOwct0GLcY0yxWMnEx1Cc+V1ue0kCwGqzYega2UwS
+      Q1JpXLeOeCQ8pa02Ez0NgCJPbePNDGnKuUqOWqAzP7logSavnaMWaPLaOWiBFuMeY9l0DFdh
+      Cf3dfXkdCr0kn0SJr4ISX8WluJTJEsVi91BXVwuKLa8Lrhbfq8BkWSIrNtauX59/u3m3aGKy
+      iDADwGRZYwaAybLGDACTZY0ZACaLlkg4SFrTCQz2k0il6evtRZ/hvIg5CmSyaNGNNPHxCGkh
+      M9ZylEJfDcPBMGVFnmmL4f4/nr/MuFEIa7wAAAAASUVORK5CYII=
     </thumbnail>
     <thumbnail height='192' name='Engagement' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
