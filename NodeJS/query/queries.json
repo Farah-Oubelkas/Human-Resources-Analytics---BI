@@ -1,0 +1,6 @@
+{
+    "getAllEmployees" : "SELECT TOP(5) * FROM [dbo].[dim_hr]",
+    "addNewEmployee" :"INSERT INTO [dbo].[dim_hr] (employee_id,department,salary,job_level,gender,new_hire,vacation_days_taken,engagement,rating) VALUES (@employee_id,@department,@salary,@job_level,@gender,@new_hire,@vacation_days_taken,@engagement,@rating) ",
+    "deleteEmployee" : "DELETE FROM [dbo].[dim_hr] WHERE employee_id = @employee_id",
+    "updateEmployeeDetails" : "UPDATE [dbo].[dim_hr] SET department = @department,salary = @salary,job_level = @job_level,gender = @gender,new_hire = @new_hire,vacation_days_taken = @vacation_days_taken,engagement = @engagement,rating = @rating WHERE employee_id = @employee_id"
+}

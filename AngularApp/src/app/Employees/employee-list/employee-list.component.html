@@ -1,0 +1,81 @@
+<main>
+
+    <section class="section section-shaped section-lg">
+            <!-- Circles background -->
+            <div class="shape shape-style-1 shape-primary alpha-4">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+        <div class="container pt-lg-md">
+            <div class="container test">
+                <div class="table-wrapper">
+                  <div class="table-title">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <h2>Manage <b>Employees</b></h2>
+                      </div>
+                      <div class="col-sm-6">
+                        <a [routerLink]="['/addemp']" class="btn btn-success" data-toggle="modal"><i
+                            class="material-icons">&#xE147;</i> <span>Add New Employee</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class="md-form mt-0">
+                      <input class="form-control" type="text" placeholder="Search" aria-label="Search" 
+                      [(ngModel)]='listFilter'>
+                    </div>
+                    </div>
+                  <table class="table table-striped table-hover" *ngIf = 'employees && employees.length'>
+                    <thead>
+                      <tr>
+                        <th>Id</th>
+                        <th>Gender</th>
+                        <th>Department</th>
+                        <th>Job_level</th>
+                        <th>New_hire</th>
+                        <th>Vacation_days_taken</th>
+                        <th>Salary</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor = 'let employee of filteredEmployees;let i=index'>
+                        <td *ngIf="i<5">{{ employee.employee_id}}</td>
+                        <td *ngIf="i<5">{{ employee.gender }}</td>
+                        <td *ngIf="i<5">{{ employee.department }}</td>
+                        <td *ngIf="i<5">{{ employee.job_level }}</td>
+                        <td *ngIf="i<5">{{ employee.new_hire }}</td>
+                        <td *ngIf="i<5">{{ employee.vacation_days_taken }}</td>
+                        <td *ngIf="i<5">{{ employee.salary | currency:'USD':'symbol':'1.2-2' }}</td>
+                        <td *ngIf="i<5">
+                          <a *ngIf="i<5" [routerLink]="['/editemp',employee.employee_id]" class="edit" data-toggle="modal"><i class="material-icons"
+                              data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                          <a *ngIf="i<5"[routerLink]="['/employees']"  class="delete" data-toggle="modal" (click)="onDelete(employee.employee_id)"><i class="material-icons"
+                              data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                        </td>
+                        </tr>
+                    </tbody>
+                  </table>
+                  <div class="clearfix">
+                    <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
+                    <ul class="pagination">
+                        <li class="page-item disabled"><a href="#">Previous</a></li>
+                        <li class="page-item"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">4</a></li>
+                        <li class="page-item"><a href="#" class="page-link">5</a></li>
+                        <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                    </ul>
+                </div>
+                </div>
+              </div>
+            </div>   
+    </section>
+</main>

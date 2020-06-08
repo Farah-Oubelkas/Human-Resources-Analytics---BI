@@ -1,0 +1,69 @@
+<main>
+
+    <section class="section section-shaped section-lg">
+            <!-- Circles background -->
+            <div class="shape shape-style-1 shape-primary alpha-4">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+<div class="container pt-lg-md">
+    <form class = "test" (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="form-row">
+    <div class="form-group col-md-2">
+        <label for="inputEmail">ID</label>
+        <input type="text" class="form-control" placeholder="Employee ID" name="id" [(ngModel)]="selectedEmployee.employee_id" disabled>
+    </div>
+    <div class="form-group col-md-4">
+        <label for="inputState">Department</label>
+        <select id="inputState" class="form-control" name="department" [(ngModel)]="selectedEmployee.department">
+          <option>Sales</option>
+          <option>Engineering</option>
+          <option>Finance</option>
+        </select>
+      </div>
+    <div class="form-group col-md-4">
+        <label for="inputState">Gender</label>
+        <select id="inputState" class="form-control" name="gender" [(ngModel)]="selectedEmployee.gender">
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+    <div class="form-group col-md-4">
+        <label for="inputState">Job_level</label>
+        <select id="inputState" class="form-control" name="job_level" [(ngModel)]="selectedEmployee.job_level">
+          <option>Hourly</option>
+          <option>Salaried</option>
+          <option>Manager</option>
+        </select>
+      </div>
+   </div>
+    <div class="form-group">
+        <label for="input">Salary</label>
+        <input type="text" class="form-control" id="inputPassword" placeholder="Salary" name="salary" [(ngModel)]="selectedEmployee.salary">
+    </div>
+    <div class="form-group">
+        <label for="textarea">Vacation_days_taken</label>
+        <input type="text" class="form-control" id="inputPassword" placeholder="Vacation days taken" name="Vacation_days_taken" [(ngModel)]="selectedEmployee.vacation_days_taken">
+    </div>
+    <div class="form-group">
+        <label for="inputState">New hire</label>
+        <select id="inputState" class="form-control" name="new_hire" [(ngModel)]="selectedEmployee.new_hire">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+    </div>
+      <button type="submit" class="btn btn-success ss" [disabled]="!f.valid">Submit</button>
+</form>
+</div>
+
+</section>
+</main>
+
+
+
+
