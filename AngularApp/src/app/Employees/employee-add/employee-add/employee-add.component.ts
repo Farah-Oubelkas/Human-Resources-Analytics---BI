@@ -36,7 +36,7 @@ export class EmployeeAddComponent implements OnInit {
       this.EmployeeService.postEmployee(this.selectedEmployee).subscribe(
         result => console.log("success submit: ", result),
         error => console.log("error: ",error),
-      ); 
+      );
       this.router.navigate(['/employees']);
     }
 

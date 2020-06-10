@@ -67,9 +67,9 @@ export class EmployeeListComponent implements OnInit {
     }
   }
 
-ngOnDestroy() {
-  if (this.mySubscription) {
-    this.mySubscription.unsubscribe();
+  ngOnDestroy() {
+    if (this.mySubscription) {
+      this.mySubscription.unsubscribe();
+    }
   }
-}
 }

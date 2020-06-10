@@ -64,5 +64,10 @@ export class EmployeeEditComponent implements OnInit {
       this.router.navigate(['/employees']);
     }
 
+  ngOnDestroy() {
+      if (this.mySubscription) {
+        this.mySubscription.unsubscribe();
+      }
+    }
 
 }

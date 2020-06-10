@@ -1,0 +1,52 @@
+<main>
+
+    <section class="section section-shaped section-lg">
+            <!-- Circles background -->
+            <div class="shape shape-style-1 shape-primary alpha-4">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+<div class="container pt-lg-md">
+    <form class = "test" (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="form-row">
+    <div class="form-group col-md-2">
+        <label for="inputEmail">Employee ID</label>
+        <input type="text" class="form-control" placeholder="Employee ID" name="id" [(ngModel)]="selectedAccident.employee_id" disabled>
+    </div>
+    <div class="form-group col-md-4">
+        <label for="inputState">Accident Type</label>
+        <select id="inputState" class="form-control" name="accident_type" [(ngModel)]="selectedAccident.accident_type">
+          <option>Mild</option>
+          <option>Severe</option>
+          <option>Moderate</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+        <label for="inputState">Location</label>
+        <select id="inputState" class="form-control" name="location" [(ngModel)]="selectedAccident.location">
+          <option>Northwood</option>
+          <option>West River</option>
+          <option>Southfield</option>
+          <option>East Valley</option>
+        </select>
+      </div>
+    <div class="form-group">
+        <label for="input">Year</label>
+        <input type="text" class="form-control" id="year" placeholder="Salary" name="year" [(ngModel)]="selectedAccident.year">
+    </div>
+    <div class="form-group">
+        <label for="input">Overtime hours</label>
+        <input type="text" class="form-control" placeholder="Overtime hours" name="overtime_hours" [(ngModel)]="selectedAccident.overtime_hours">
+    </div>
+      <button type="submit" class="btn btn-success ss" [disabled]="!f.valid">Submit</button>
+</form>
+</div>
+</section>
+</main> 
+

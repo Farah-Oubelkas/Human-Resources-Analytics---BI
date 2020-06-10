@@ -18,10 +18,16 @@ import { HomeModule } from './home/home.module';
 import { LoginComponent } from './login/login.component';
 import { EmployeeListComponent } from './Employees/employee-list/employee-list.component';
 import { AccidentComponent } from './Health/accident/accident.component';
-import { PerformanceComponent } from './performance/performance.component';
+import { PerformanceComponent } from './Recruitement/performance.component';
 import { EmployeeService } from './services/employee.service';
+import { AccidentService } from './services/accident.service';
+import { RecruitementService } from './services/recruitment.service';
 import { EmployeeAddComponent } from './Employees/employee-add/employee-add/employee-add.component';
 import { EmployeeEditComponent } from './Employees/employee-edit/employee-edit/employee-edit.component';
+import { AccidentAddComponent } from './Health/accident-add/accident-add.component';
+import { AccidentEditComponent } from './Health/accident-edit/accident-edit.component';
+import { RecruitmentAddComponent } from './Recruitement/recruitment-add/recruitment-add.component';
+import { RecruitmentEditComponent } from './Recruitement/recruitment-edit/recruitment-edit.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +42,11 @@ import { EmployeeEditComponent } from './Employees/employee-edit/employee-edit/e
     AccidentComponent,
     PerformanceComponent,
     EmployeeAddComponent,
-    EmployeeEditComponent
+    EmployeeEditComponent,
+    AccidentAddComponent,
+    AccidentEditComponent,
+    RecruitmentAddComponent,
+    RecruitmentEditComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +57,7 @@ import { EmployeeEditComponent } from './Employees/employee-edit/employee-edit/e
     AppRoutingModule,
     HomeModule
   ],
-  providers: [EmployeeService],
+  providers: [EmployeeService,AccidentService,RecruitementService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

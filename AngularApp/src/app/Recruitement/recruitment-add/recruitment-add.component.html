@@ -1,0 +1,56 @@
+<main>
+    <section class="section section-shaped section-lg">
+            <!-- Circles background -->
+            <div class="shape shape-style-1 shape-primary alpha-4">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+<div class="container pt-lg-md">
+    <form class = "test" (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="form-row">
+    <div class="form-group col-md-2">
+        <label for="inputEmail">Employee ID</label>
+        <input type="text" class="form-control" placeholder="Employee ID" name="id" [(ngModel)]="selectedRecruitment.id_recruitment">
+    </div>
+    <div class="form-group col-md-4">
+        <label for="inputState">Recruitment source</label>
+        <select id="inputState" class="form-control" name="location" [(ngModel)]="selectedRecruitment.recruiting_source">
+            <option>Search Firm</option>
+            <option>Referral</option>
+            <option>NA</option>
+            <option>Campus</option>
+            <option>Applied Online</option>
+          </select>
+      </div>
+    </div>
+    <div class="form-group">
+        <label for="inputState">Attrition</label>
+        <select id="inputState" class="form-control" name="location" [(ngModel)]="selectedRecruitment.attrition">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+    <div class="form-group">
+        <label for="inputState">Performance rating</label>
+        <select id="inputState" class="form-control" name="location" [(ngModel)]="selectedRecruitment.performance_rating">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </div>
+    <div class="form-group">
+        <label for="input">Sales quota</label>
+        <input type="text" class="form-control" id="year" placeholder="Salary" name="year" [(ngModel)]="selectedRecruitment.sales_quota_pct">
+    </div>
+      <button type="submit" class="btn btn-success ss" [disabled]="!f.valid">Submit</button>
+</form>
+</div>
+</section>
+</main> 
+

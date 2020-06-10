@@ -46,17 +46,17 @@
                     </thead>
                     <tbody>
                       <tr *ngFor = 'let employee of filteredEmployees;let i=index'>
-                        <td *ngIf="i<5">{{ employee.employee_id}}</td>
-                        <td *ngIf="i<5">{{ employee.gender }}</td>
-                        <td *ngIf="i<5">{{ employee.department }}</td>
-                        <td *ngIf="i<5">{{ employee.job_level }}</td>
-                        <td *ngIf="i<5">{{ employee.new_hire }}</td>
-                        <td *ngIf="i<5">{{ employee.vacation_days_taken }}</td>
-                        <td *ngIf="i<5">{{ employee.salary | currency:'USD':'symbol':'1.2-2' }}</td>
-                        <td *ngIf="i<5">
-                          <a *ngIf="i<5" [routerLink]="['/editemp',employee.employee_id]" class="edit" data-toggle="modal"><i class="material-icons"
+                        <td>{{ employee.employee_id}}</td>
+                        <td>{{ employee.gender }}</td>
+                        <td>{{ employee.department }}</td>
+                        <td>{{ employee.job_level }}</td>
+                        <td>{{ employee.new_hire }}</td>
+                        <td>{{ employee.vacation_days_taken }}</td>
+                        <td>{{ employee.salary | currency:'USD':'symbol':'1.2-2' }}</td>
+                        <td >
+                          <a  [routerLink]="['/editemp',employee.employee_id]" class="edit" data-toggle="modal"><i class="material-icons"
                               data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                          <a *ngIf="i<5"[routerLink]="['/employees']"  class="delete" data-toggle="modal" (click)="onDelete(employee.employee_id)"><i class="material-icons"
+                          <a [routerLink]="['/employees']"  class="delete" data-toggle="modal" (click)="onDelete(employee.employee_id)"><i class="material-icons"
                               data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                         </td>
                         </tr>

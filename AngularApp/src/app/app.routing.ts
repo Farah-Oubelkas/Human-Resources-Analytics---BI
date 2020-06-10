@@ -10,9 +10,13 @@ import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './login/login.component';
 import { EmployeeListComponent } from './Employees/employee-list/employee-list.component';
 import { AccidentComponent } from './Health/accident/accident.component';
-import { PerformanceComponent } from './performance/performance.component';
+import { PerformanceComponent } from './Recruitement/performance.component';
 import { EmployeeAddComponent } from './Employees/employee-add/employee-add/employee-add.component';
 import { EmployeeEditComponent } from './Employees/employee-edit/employee-edit/employee-edit.component';
+import { AccidentAddComponent } from './Health/accident-add/accident-add.component';
+import { AccidentEditComponent } from './Health/accident-edit/accident-edit.component';
+import { RecruitmentAddComponent } from './Recruitement/recruitment-add/recruitment-add.component';
+import { RecruitmentEditComponent } from './Recruitement/recruitment-edit/recruitment-edit.component';
 
 const routes: Routes =[
     { path: 'home',             component: HomeComponent },
@@ -25,7 +29,12 @@ const routes: Routes =[
     { path: 'performance',     component: PerformanceComponent},
     { path: 'addemp',     component: EmployeeAddComponent},
     { path: 'editemp/:id',     component: EmployeeEditComponent},
-    { path: '', redirectTo: 'home', pathMatch: 'full' }
+    { path: 'editacc/:id',     component: AccidentEditComponent},
+    { path: 'addacc',     component: AccidentAddComponent},
+    { path: 'editrec/:id',     component: RecruitmentEditComponent},
+    { path: 'addrec',     component: RecruitmentAddComponent},
+
+    { path: '', redirectTo: 'landing', pathMatch: 'full' }
 ];
 
 @NgModule({
