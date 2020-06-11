@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:TalendNoSQLMetadata="http://www.talend.org/nosql" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendNoSQLMetadata:NoSQLConnection xmi:id="_72QmcG-gEeq6mrOt8nmR6g" name="datawarehouse" label="datawarehouse" dataPackage="_9pYJ4G-gEeq6mrOt8nmR6g" dbType="MONGODB">
+    <attributes xmi:id="_72QmcW-gEeq6mrOt8nmR6g" key="DB_VERSION" value="MONGODB_3_5_X"/>
+    <attributes xmi:id="_72Qmcm-gEeq6mrOt8nmR6g" key="HOST" value="localhost"/>
+    <attributes xmi:id="_72Qmc2-gEeq6mrOt8nmR6g" key="PORT" value="27017"/>
+    <attributes xmi:id="_72QmdG-gEeq6mrOt8nmR6g" key="DATABASE" value="Datawarehouse"/>
+    <attributes xmi:id="_72QmdW-gEeq6mrOt8nmR6g" key="REQUIRED_AUTHENTICATION" value="false"/>
+    <attributes xmi:id="_72Qmdm-gEeq6mrOt8nmR6g" key="USERNAME" value=""/>
+    <attributes xmi:id="_72Qmd2-gEeq6mrOt8nmR6g" key="PASSWORD" value=""/>
+    <attributes xmi:id="_72QmeG-gEeq6mrOt8nmR6g" key="USE_REPLICA_SET" value="false"/>
+    <attributes xmi:id="_72QmeW-gEeq6mrOt8nmR6g" key="REPLICA_SET" value="[]"/>
+  </TalendNoSQLMetadata:NoSQLConnection>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_9pYJ4G-gEeq6mrOt8nmR6g" name="Datawarehouse" dataManager="_72QmcG-gEeq6mrOt8nmR6g">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_9pYJ4W-gEeq6mrOt8nmR6g" name="dim_recruitment" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_83k5gG-gEeq6mrOt8nmR6g" label="dim_recruitment"/>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_9pYJ4m-gEeq6mrOt8nmR6g" name="dim_temps" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_86zMoG-gEeq6mrOt8nmR6g" label="dim_temps"/>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_jHfNUIMtEeqv2LSiW7rqaw" name="dim_performance" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_jCdjYIMtEeqv2LSiW7rqaw" label="dim_performance">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jHfNUYMtEeqv2LSiW7rqaw" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jHfNUoMtEeqv2LSiW7rqaw" name="employee_id" label="employee_id" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jHfNU4MtEeqv2LSiW7rqaw" name="department" label="department" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jHfNVIMtEeqv2LSiW7rqaw" name="job_level" label="job_level" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jHfNVYMtEeqv2LSiW7rqaw" name="gender" label="gender" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jHfNVoMtEeqv2LSiW7rqaw" name="rating" label="rating" talendType="id_Integer"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_jLBCcIMtEeqv2LSiW7rqaw" name="dim_accident" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_jKcasIMtEeqv2LSiW7rqaw" label="dim_accident">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jLBCcYMtEeqv2LSiW7rqaw" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jLBCcoMtEeqv2LSiW7rqaw" name="year" label="year" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jLBCc4MtEeqv2LSiW7rqaw" name="employee_id" label="employee_id" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jLBCdIMtEeqv2LSiW7rqaw" name="accident_type" label="accident_type" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jLBCdYMtEeqv2LSiW7rqaw" name="location" label="location" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jLBCdoMtEeqv2LSiW7rqaw" name="overtime_hours" label="overtime_hours" talendType="id_Integer"/>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Schema>
+</xmi:XMI>

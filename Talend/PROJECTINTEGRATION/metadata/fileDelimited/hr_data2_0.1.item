@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_M4nc0WehEeqGGfrNPR2xZw" name="hr_data2" id="_M4nc0GehEeqGGfrNPR2xZw" dataPackage="_M4nc0mehEeqGGfrNPR2xZw" Server="Localhost 127.0.0.1" FilePath="C:/Users/yassi/Desktop/Tp_mongodb_app-master/Angular/project/dataset/hr_data2.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_M4nc0mehEeqGGfrNPR2xZw" name="default" dataManager="_M4nc0WehEeqGGfrNPR2xZw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_M4nc02ehEeqGGfrNPR2xZw" id="_Gv1gsGehEeqGGfrNPR2xZw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M4nc1GehEeqGGfrNPR2xZw" label="year" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M4nc1WehEeqGGfrNPR2xZw" label="employee_id" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M4nc1mehEeqGGfrNPR2xZw" label="location" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M4nc12ehEeqGGfrNPR2xZw" label="overtime_hours" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

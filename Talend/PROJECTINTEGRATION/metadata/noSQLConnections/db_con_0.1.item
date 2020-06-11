@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:TalendNoSQLMetadata="http://www.talend.org/nosql" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendNoSQLMetadata:NoSQLConnection xmi:id="_XnY9UG-cEeq6mrOt8nmR6g" name="db_con" label="db_con" dataPackage="_avD44G-cEeq6mrOt8nmR6g" dbType="MONGODB">
+    <attributes xmi:id="_XnY9UW-cEeq6mrOt8nmR6g" key="DB_VERSION" value="MONGODB_3_5_X"/>
+    <attributes xmi:id="_XnY9Um-cEeq6mrOt8nmR6g" key="HOST" value="localhost"/>
+    <attributes xmi:id="_XnY9U2-cEeq6mrOt8nmR6g" key="PORT" value="27017"/>
+    <attributes xmi:id="_XnY9VG-cEeq6mrOt8nmR6g" key="DATABASE" value="HR-Project"/>
+    <attributes xmi:id="_XnY9VW-cEeq6mrOt8nmR6g" key="REQUIRED_AUTHENTICATION" value="false"/>
+    <attributes xmi:id="_XnY9Vm-cEeq6mrOt8nmR6g" key="USERNAME" value=""/>
+    <attributes xmi:id="_XnY9V2-cEeq6mrOt8nmR6g" key="PASSWORD" value=""/>
+    <attributes xmi:id="_XnY9WG-cEeq6mrOt8nmR6g" key="USE_REPLICA_SET" value="false"/>
+    <attributes xmi:id="_XnY9WW-cEeq6mrOt8nmR6g" key="REPLICA_SET" value="[]"/>
+  </TalendNoSQLMetadata:NoSQLConnection>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_avD44G-cEeq6mrOt8nmR6g" name="HR-Project" dataManager="_XnY9UG-cEeq6mrOt8nmR6g">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_avEf8G-cEeq6mrOt8nmR6g" name="accidents" id="_YbIHYG-cEeq6mrOt8nmR6g" label="accidents">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEf8W-cEeq6mrOt8nmR6g" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEf8m-cEeq6mrOt8nmR6g" name="year" label="year" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEf82-cEeq6mrOt8nmR6g" name="employee_id" label="employee_id" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEf9G-cEeq6mrOt8nmR6g" name="accident_type" label="accident_type" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_avEf9W-cEeq6mrOt8nmR6g" name="fair_pay" id="_YguZEG-cEeq6mrOt8nmR6g" label="fair_pay">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEf9m-cEeq6mrOt8nmR6g" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEf92-cEeq6mrOt8nmR6g" name="employee_id" label="employee_id" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEf-G-cEeq6mrOt8nmR6g" name="department" label="department" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEf-W-cEeq6mrOt8nmR6g" name="salary" label="salary" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEf-m-cEeq6mrOt8nmR6g" name="new_hire" label="new_hire" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEf-2-cEeq6mrOt8nmR6g" name="job_level" label="job_level" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_avEf_G-cEeq6mrOt8nmR6g" name="hr_data" id="_YnDDgG-cEeq6mrOt8nmR6g" label="hr_data">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEf_W-cEeq6mrOt8nmR6g" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEf_m-cEeq6mrOt8nmR6g" name="employee_id" label="employee_id" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEf_2-cEeq6mrOt8nmR6g" name="department" label="department" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEgAG-cEeq6mrOt8nmR6g" name="job_level" label="job_level" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEgAW-cEeq6mrOt8nmR6g" name="gender" label="gender" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_avEgAm-cEeq6mrOt8nmR6g" name="hr_data2" id="_YrF2AG-cEeq6mrOt8nmR6g" label="hr_data2">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEgA2-cEeq6mrOt8nmR6g" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEgBG-cEeq6mrOt8nmR6g" name="year" label="year" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEgBW-cEeq6mrOt8nmR6g" name="employee_id" label="employee_id" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEgBm-cEeq6mrOt8nmR6g" name="location" label="location" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEgB2-cEeq6mrOt8nmR6g" name="overtime_hours" label="overtime_hours" talendType="id_Integer"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_avEgCG-cEeq6mrOt8nmR6g" name="performance" id="_YwFqwG-cEeq6mrOt8nmR6g" label="performance">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEgCW-cEeq6mrOt8nmR6g" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEgCm-cEeq6mrOt8nmR6g" name="employee_id" label="employee_id" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEgC2-cEeq6mrOt8nmR6g" name="rating" label="rating" talendType="id_Integer"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_avEgDG-cEeq6mrOt8nmR6g" name="recruitment" id="_ZDnDsG-cEeq6mrOt8nmR6g" label="recruitment">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEgDW-cEeq6mrOt8nmR6g" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEgDm-cEeq6mrOt8nmR6g" name="attrition" label="attrition" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEgD2-cEeq6mrOt8nmR6g" name="performance_rating" label="performance_rating" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEgEG-cEeq6mrOt8nmR6g" name="sales_quota_pct" label="sales_quota_pct" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEgEW-cEeq6mrOt8nmR6g" name="recruiting_source" label="recruiting_source" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_avEgEm-cEeq6mrOt8nmR6g" name="survey1" id="_ZI3XIG-cEeq6mrOt8nmR6g" label="survey1">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEgE2-cEeq6mrOt8nmR6g" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEgFG-cEeq6mrOt8nmR6g" name="employee_id" label="employee_id" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEgFW-cEeq6mrOt8nmR6g" name="department" label="department" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEgFm-cEeq6mrOt8nmR6g" name="engagement" label="engagement" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEgF2-cEeq6mrOt8nmR6g" name="salary" label="salary" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_avEgGG-cEeq6mrOt8nmR6g" name="vacation_days_taken" label="vacation_days_taken" talendType="id_Integer"/>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Schema>
+</xmi:XMI>

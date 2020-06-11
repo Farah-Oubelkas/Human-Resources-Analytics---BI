@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:TalendNoSQLMetadata="http://www.talend.org/nosql" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendNoSQLMetadata:NoSQLConnection xmi:id="_ZZWWUGedEeqGGfrNPR2xZw" name="mongodb_hr" label="mongodb_hr" dataPackage="_Yf3CMGegEeqGGfrNPR2xZw" dbType="MONGODB">
+    <attributes xmi:id="_ZZW9YGedEeqGGfrNPR2xZw" key="DB_VERSION" value="MONGODB_3_5_X"/>
+    <attributes xmi:id="_ZZW9YWedEeqGGfrNPR2xZw" key="HOST" value="localhost"/>
+    <attributes xmi:id="_ZZW9YmedEeqGGfrNPR2xZw" key="PORT" value="27017"/>
+    <attributes xmi:id="_ZZW9Y2edEeqGGfrNPR2xZw" key="DATABASE" value="HR-Project"/>
+    <attributes xmi:id="_ZZW9ZGedEeqGGfrNPR2xZw" key="REQUIRED_AUTHENTICATION" value="false"/>
+    <attributes xmi:id="_ZZW9ZWedEeqGGfrNPR2xZw" key="USERNAME" value=""/>
+    <attributes xmi:id="_ZZW9ZmedEeqGGfrNPR2xZw" key="PASSWORD" value=""/>
+    <attributes xmi:id="_ZZW9Z2edEeqGGfrNPR2xZw" key="USE_REPLICA_SET" value="false"/>
+    <attributes xmi:id="_ZZW9aGedEeqGGfrNPR2xZw" key="REPLICA_SET" value="[]"/>
+  </TalendNoSQLMetadata:NoSQLConnection>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_Yf3CMGegEeqGGfrNPR2xZw" name="HR-Project" dataManager="_ZZWWUGedEeqGGfrNPR2xZw">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_Yf3CMWegEeqGGfrNPR2xZw" name="accident" id="_WcA7IGegEeqGGfrNPR2xZw" label="accident"/>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_Yf3CMmegEeqGGfrNPR2xZw" name="hr_data" id="_WfSRkGegEeqGGfrNPR2xZw" label="hr_data"/>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_Yf3CM2egEeqGGfrNPR2xZw" name="fair_pay" id="_WjifcGegEeqGGfrNPR2xZw" label="fair_pay"/>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_Yf3CNGegEeqGGfrNPR2xZw" name="hr_data2" id="_WohGEGegEeqGGfrNPR2xZw" label="hr_data2"/>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_Yf3CNWegEeqGGfrNPR2xZw" name="performance" id="_WsF-gGegEeqGGfrNPR2xZw" label="performance"/>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_Yf3CNmegEeqGGfrNPR2xZw" name="recruitment" id="_Wwy4UGegEeqGGfrNPR2xZw" label="recruitment">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Yf3CN2egEeqGGfrNPR2xZw" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Yf3COGegEeqGGfrNPR2xZw" name="attrition" label="attrition" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Yf3COWegEeqGGfrNPR2xZw" name="performance_rating" label="performance_rating" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Yf3COmegEeqGGfrNPR2xZw" name="sales_quota_pct" label="sales_quota_pct" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Yf3CO2egEeqGGfrNPR2xZw" name="recruiting_source" label="recruiting_source" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_Yf3CPGegEeqGGfrNPR2xZw" name="survey1" id="_W1Tk4GegEeqGGfrNPR2xZw" label="survey1"/>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_Yf3pQGegEeqGGfrNPR2xZw" name="survey2" id="_W5rHgGegEeqGGfrNPR2xZw" label="survey2"/>
+  </orgomg.cwm.resource.relational:Schema>
+</xmi:XMI>
